@@ -42,11 +42,7 @@ main {
 
 @media only screen and (max-device-width: 480px) {
   .tool {
-    min-width: 90%;
-    margin-left: 5%; }
-
-  html {
-    color: RED !important; } }
+    min-width: 90%; } }
 .toolDescription {
   background-color: #f4e7d7;
   border-color: GRAY; }
