@@ -1,0 +1,22 @@
+-Keep .git and todo.txt from being served
+-BMI Metric doesn't work and everything needs to be checked
+-Functionality Check
+
+-Favicon needs a redo
+-Do mobile styling better
+
+Tools:
+rapidtables.com
+http://www.calculator.net/
+http://www.calculatorsoup.com/
+http://www.free-online-calculator-use.com/
+http://www.quickpicturetools.com/en/
+http://textmechanic.com/
+
+TDE
+BMR
+Age Calculator
+Time Calculator
+Descriptive Stats
+1RM calculator
+Text Tools (learn regex)

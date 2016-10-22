@@ -1,0 +1,168 @@
+$font: 'Raleway', sans-serif;
+$fontColor: BLACK;
+
+$dominantColor: #3366CC;
+$accentColorLight: #A5D4F3;
+$accentColorDark: #3B1FAD;
+$accentColorOffWhite: #f4e7d7;
+
+$backgroundColor: #F5F3F6;
+$headerBackgroundColor: $dominantColor;
+$toolBackgroundColor: $accentColorLight;
+$fieldsetBackgroundColor: LIGHTGRAY;
+$fieldsetBorderColor: $accentColorDark;
+$toolDescriptionBackgroundColor: $accentColorOffWhite;
+$toolDescriptionBorderColor: GRAY;
+$outputContainerBackgroundColor: LIGHTGRAY;
+$outputContainerBorderColor: BLACK;
+
+
+/* General */
+html{
+    overflow: scroll;
+    font-family: $font;
+    background-color: $backgroundColor;
+    color: $fontColor;
+}
+html,
+body{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    padding: 1em
+}
+
+/* Header */
+.header{
+    padding:1.75em;
+    background-color: $headerBackgroundColor;
+
+}
+
+.header h1{
+    margin: 0;
+}
+
+.header a{
+    color: $fontColor;
+    text-decoration: none;
+}
+
+/* Tool */
+$toolSubSectionBorderWidth: 2px;
+$toolSubSectionBorderRadius: 5px;
+.toolSubSection{
+    margin: .5em;
+    padding: 1em;
+    border-radius: $toolSubSectionBorderRadius;
+    border-width: $toolSubSectionBorderWidth;
+    border-style: solid;
+}
+
+.tool{
+    display: inline-block;
+    min-width: 40%;
+    background-color: $toolBackgroundColor;
+    padding:1em;
+    border-radius: 1em;
+}
+
+@media only screen and (max-device-width: 480px) {
+    .tool{
+        min-width: 90%;
+        margin-left: 5%;
+    }
+    html{
+        color: RED !important;
+    }
+}
+
+.toolDescription{
+    @extend .toolSubSection;
+    background-color: $toolDescriptionBackgroundColor;
+    border-color: $toolDescriptionBorderColor;
+}
+
+.outputContainer{
+    @extend .toolSubSection;
+    display: inline-block;
+    background-color: $outputContainerBackgroundColor;
+    border-color: $outputContainerBorderColor;
+}
+
+.outputContainer{
+    label{
+        display: none;
+    }
+
+    td label{
+        display: initial !important;
+    }
+}
+
+.outputContainer output{
+    font-size: xx-large;
+}
+
+/* Forms */
+input[type="text"],input[type="number"],textarea {
+    height: 2em;
+    padding: .3em;
+    border-radius: .3em;
+    border-style:none;
+}
+
+textarea{
+    $width: 95%;
+    width: $width;
+    height: 10em;
+    margin-left: (100% - $width) / 2;
+}
+
+input[type="text"] ~ label,
+input[type="number"] ~ label,
+textarea ~ label
+{
+  display: inline-block;
+  margin-top: 1em;
+}
+
+fieldset {
+    @extend .toolSubSection;
+    border-color: $fieldsetBorderColor;
+    background-color: $fieldsetBackgroundColor;
+}
+
+fieldset legend {
+    padding: .35em;
+    margin-left: 2em;
+    background-color: $fieldsetBackgroundColor;
+    border: $toolSubSectionBorderWidth solid $fieldsetBorderColor;
+    border-radius: $toolSubSectionBorderRadius;
+}
+
+button {
+    height: 2em;
+}
+
+/* Tables */
+table {
+    border-collapse: collapse;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+th,
+td {
+    padding: .75em;
+}
+
+th{
+    background-color: rgba(0, 0, 0, 0.2);
+}
