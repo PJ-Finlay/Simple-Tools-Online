@@ -1,8 +1,7 @@
 <?php
-$pathToRoot = "../../";
 $toolName = "BMI Calculator";
 $keywords = "underweight, normal weight, overweight, obesity";
-include($pathToRoot.'php/header.php');
+include($_SERVER['DOCUMENT_ROOT'].'/php/header.php');
 ?>
 
 <article class="tool">

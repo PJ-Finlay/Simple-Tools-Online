@@ -1,8 +1,7 @@
 <?php
-$pathToRoot = "../../";
 $toolName = "Rowing Weight Adjustment Calculator";
 $keywords = "crew, rowing, weight adjustment";
-include($pathToRoot.'php/header.php');
+include($_SERVER['DOCUMENT_ROOT'].'/php/header.php');
 ?>
 
 <article class="tool">

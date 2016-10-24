@@ -1,9 +1,14 @@
--Keep .git and todo.txt from being served
--BMI Metric doesn't work and everything needs to be checked
--Functionality Check
-
+-Deal with trailing slashes after URL
+-Set up PHP errors
+-Redirect www.* to main site
+-Fix 404 page
 -Favicon needs a redo
 -Do mobile styling better
+-Setup SSL
+    -Change base to use HTTPS://
+-Figure out password management
+-Add meta description for seo (also make a default that uses the name to write a short sentance)
+
 
 Tools:
 rapidtables.com

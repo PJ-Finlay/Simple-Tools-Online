@@ -1,8 +1,7 @@
 <?php
-$pathToRoot = "../../";
 $toolName = "Tally Keeper";
 $keywords = "score keeper, counter";
-include($pathToRoot.'php/header.php');
+include($_SERVER['DOCUMENT_ROOT'].'/php/header.php');
 ?>
 <article class="tool">
     <h1>Tally Keeper</h1>

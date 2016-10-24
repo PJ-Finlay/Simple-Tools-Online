@@ -1,8 +1,7 @@
 <?php
-$pathToRoot = "../../";
 $toolName = "Word Counter";
 $keywords = "character counter, sentance counter, paragraph counter";
-include($pathToRoot.'php/header.php');
+include($_SERVER['DOCUMENT_ROOT'].'/php/header.php');
 ?>
 
 <article class="tool">

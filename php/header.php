@@ -2,7 +2,6 @@
 $siteName = "Simple Tools Online";
 $defaultKeywords = "online, tool"; //Added to any keywords put in the keywords variable
 
-
 if(!isset($toolName)){
     $toolName = $siteName;
 }
@@ -20,16 +19,11 @@ if(isset($keywords)){
 $keywords = $keywords.', '.$toolName;
 $keywords = strtolower($keywords);
 
-$baseHTML = '';
-if(isset($pathToRoot)){
-    $baseHTML = '<base href="'.$pathToRoot."\">";
-}
-
 echo '<!DOCTYPE html>
 <html lang="en">
 <head>
     <title>'.$toolName.'</title>
-    '.$baseHTML.'
+    <base href="http://'.$_SERVER['HTTP_HOST'].'/">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="'.$description.'">

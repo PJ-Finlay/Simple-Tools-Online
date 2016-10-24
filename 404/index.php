@@ -1,7 +1,6 @@
 <?php
-$pathToRoot = "../";
 $toolName = "404 - Not Found";
-include($pathToRoot.'php/header.php');
+include($_SERVER['DOCUMENT_ROOT'].'/php/header.php');
 ?>
 <section>
     <h1>404 - Page Not Found</h1>
