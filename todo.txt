@@ -1,7 +1,5 @@
--Deal with trailing slashes after URL
 -Set up PHP errors
 -Redirect www.* to main site
--Fix 404 page
 -Favicon needs a redo
 -Do mobile styling better
 -Setup SSL

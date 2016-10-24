@@ -3,7 +3,11 @@ Options -Indexes
 
 #Redirect to 404 page
 RewriteEngine On
-ErrorDocument 404 /404/
+ErrorDocument 404 /404
+
+#Remove .php file extensions
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule !.*\.php$ %{REQUEST_FILENAME}.php [QSA,L]
 
 #Prevent returning .git & todo.txt
 Redirect /.git/ /404/
