@@ -17,4 +17,4 @@ RewriteRule !.*\.php$ %{REQUEST_FILENAME}.php [QSA,L]
 
 #Redirect www. to main domain
 RewriteCond %{HTTP_HOST} ^www\.simpletoolsonline\.com [NC]
-RewriteRule ^(.*)$ http://simpletoolsonline.com/$1 [L,R=301]
+RewriteRule ^(.*)$ https://simpletoolsonline.com/$1 [L,R=301]

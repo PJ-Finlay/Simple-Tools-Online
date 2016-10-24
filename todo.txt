@@ -1,8 +1,7 @@
 -Set up PHP errors
+-Make sure SSL is following all best practices
 -Favicon needs a redo
 -Do mobile styling better
--Setup SSL
-    -Change <base>(header.php) and www. redirect (.htaccess) to use https:// instead of http://
 -Figure out password management
 -Add meta description for seo (also make a default that uses the name to write a short sentance)
 -Go through Google Webmaster Tools
