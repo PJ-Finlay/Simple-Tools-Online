@@ -9,7 +9,7 @@ Redirect /todo.txt /404/
 RewriteEngine On
 
 #Redirect to 404 page
-ErrorDocument 404 /404
+ErrorDocument 404 /404.php
 
 #Remove .php file extensions
 RewriteCond %{REQUEST_FILENAME}.php -f
