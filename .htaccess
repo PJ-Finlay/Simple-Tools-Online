@@ -1,14 +1,20 @@
 #Disable directory indexes
 Options -Indexes
 
-#Redirect to 404 page
+#Prevent returning .git & todo.txt
+Redirect /.git/ /404/
+Redirect /todo.txt /404/
+
+#Turn RewriteEngine on
 RewriteEngine On
+
+#Redirect to 404 page
 ErrorDocument 404 /404
 
 #Remove .php file extensions
 RewriteCond %{REQUEST_FILENAME}.php -f
 RewriteRule !.*\.php$ %{REQUEST_FILENAME}.php [QSA,L]
 
-#Prevent returning .git & todo.txt
-Redirect /.git/ /404/
-Redirect /todo.txt /404/
+#Redirect www. to main domain
+RewriteCond %{HTTP_HOST} ^www\.simpletoolsonline\.com [NC]
+RewriteRule ^(.*)$ http://simpletoolsonline.com/$1 [L,R=301]

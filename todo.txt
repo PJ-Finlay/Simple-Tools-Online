@@ -1,12 +1,11 @@
 -Set up PHP errors
--Redirect www.* to main site
 -Favicon needs a redo
 -Do mobile styling better
 -Setup SSL
-    -Change base to use HTTPS://
+    -Change <base>(header.php) and www. redirect (.htaccess) to use https:// instead of http://
 -Figure out password management
 -Add meta description for seo (also make a default that uses the name to write a short sentance)
-
+-Go through Google Webmaster Tools
 
 Tools:
 rapidtables.com
@@ -23,3 +22,4 @@ Time Calculator
 Descriptive Stats
 1RM calculator
 Text Tools (learn regex)
+Citation Generator
