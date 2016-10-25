@@ -19,11 +19,17 @@ if(isset($keywords)){
 $keywords = $keywords.', '.$toolName;
 $keywords = strtolower($keywords);
 
+$baseURL = $_SERVER['HTTP_HOST'];
+if (strpos($baseURL, 'localhost') !== false) {
+    $baseURL = "http://".$baseURL;
+}else{
+    $baseURL = 'https://'.$baseURL;
+}
 echo '<!DOCTYPE html>
 <html lang="en">
 <head>
     <title>'.$toolName.'</title>
-    <base href="https://'.$_SERVER['HTTP_HOST'].'/">
+    <base href="'.$baseURL.'/">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="'.$description.'">

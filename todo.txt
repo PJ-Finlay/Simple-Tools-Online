@@ -5,9 +5,7 @@
 -Add meta description for seo (also make a default that uses the name to write a short sentence)
 -Try various site checkers
 -Go through list of web best practices
--Make sure 404 page is also returning 404 page
--Make custom errors for non 404 pages
--Figure out redirecting to https
+-Set cacheing
 
 Tools:
 rapidtables.com
