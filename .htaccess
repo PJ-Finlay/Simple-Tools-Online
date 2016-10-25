@@ -5,10 +5,21 @@ Options -Indexes
 Redirect /.git/ /404/
 Redirect /todo.txt /404/
 
+#Compress text, html, javascript, css, xml:
+AddOutputFilterByType DEFLATE text/plain
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/xml
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE application/xml
+AddOutputFilterByType DEFLATE application/xhtml+xml
+AddOutputFilterByType DEFLATE application/rss+xml
+AddOutputFilterByType DEFLATE application/javascript
+AddOutputFilterByType DEFLATE application/x-javascript
+
 #Turn RewriteEngine on
 RewriteEngine On
 
-#Redirect to 404 page
+#Redirect to error pages
 ErrorDocument 404 /404.php
 
 #Remove .php file extensions
@@ -19,6 +30,8 @@ RewriteRule !.*\.php$ %{REQUEST_FILENAME}.php [QSA,L]
 RewriteCond %{HTTP_HOST} ^www\.simpletoolsonline\.com [NC]
 RewriteRule ^(.*)$ https://simpletoolsonline.com/$1 [L,R=301]
 
+#######DISABLE FOR LOCALHOST#######
+
 #Redirect http traffic to https
-RewriteCond %{HTTPS} !=on
-RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R,L]
+#RewriteCond %{HTTPS} !=on
+#RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R,L]
