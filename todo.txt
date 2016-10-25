@@ -5,7 +5,8 @@
 -Add meta description for seo (also make a default that uses the name to write a short sentence)
 -Try various site checkers
 -Go through list of web best practices
--Set cacheing
+-Set caching settings
+-Write Meta descriptions
 
 Tools:
 rapidtables.com
@@ -20,6 +21,5 @@ BMR
 Age Calculator
 Time Calculator
 Descriptive Stats
-1RM calculator
 Text Tools (learn regex)
 Citation Generator

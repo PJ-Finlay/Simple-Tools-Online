@@ -1,6 +1,6 @@
 //Calls the given function every time that an input/select/textarea is changed within .tool
 function setOnChangeListener(listener){
-    $(".tool input,.tool  select,.tool  textarea").on('keyup change', listener);
+    $(".tool input,.tool  select,.tool  textarea").on('keydown change input', listener);
 }
 
 //Checks to make sure that value is a valid number then outputs to the given selector
