@@ -18,3 +18,7 @@ RewriteRule !.*\.php$ %{REQUEST_FILENAME}.php [QSA,L]
 #Redirect www. to main domain
 RewriteCond %{HTTP_HOST} ^www\.simpletoolsonline\.com [NC]
 RewriteRule ^(.*)$ https://simpletoolsonline.com/$1 [L,R=301]
+
+#Redirect http traffic to https
+RewriteCond %{HTTPS} !=on
+RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R,L]
