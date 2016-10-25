@@ -1,10 +1,13 @@
 -Set up PHP errors
--Make sure SSL is following all best practices
 -Favicon needs a redo
 -Do mobile styling better
 -Figure out password management
--Add meta description for seo (also make a default that uses the name to write a short sentance)
--Go through Google Webmaster Tools
+-Add meta description for seo (also make a default that uses the name to write a short sentence)
+-Try various site checkers
+-Go through list of web best practices
+-Make sure 404 page is also returning 404 page
+-Make custom errors for non 404 pages
+-Figure out redirecting to https
 
 Tools:
 rapidtables.com

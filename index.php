@@ -4,14 +4,14 @@
     <ul id="toolsList">
         <li>Utility
             <ul>
-                <li><a href="tools/tally-keeper">Tally Keeper</a></li>
-                <li><a href="tools/word-counter">Word Counter</a></li>
+                <li><a href="tools/tally-keeper/">Tally Keeper</a></li>
+                <li><a href="tools/word-counte/r">Word Counter</a></li>
             </ul>
       </li>
       <li>Health & Fitness
           <ul>
-              <li><a href="tools/bmi-calculator">BMI Calculator</a></li>
-              <li><a href="tools/rowing-weight-adjustment-calculator">Rowing Weight Adjustment Calculator</a></li>
+              <li><a href="tools/bmi-calculator/">BMI Calculator</a></li>
+              <li><a href="tools/rowing-weight-adjustment-calculator/">Rowing Weight Adjustment Calculator</a></li>
           </ul>
       </li>
     </ul>
