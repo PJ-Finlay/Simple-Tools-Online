@@ -10,9 +10,9 @@
       </li>
       <li>Health & Fitness
           <ul>
+              <li><a href="tools/1-rep-max-calculator/">1 Rep Max Calculator</a></li>
               <li><a href="tools/bmi-calculator/">BMI Calculator</a></li>
               <li><a href="tools/rowing-weight-adjustment-calculator/">Rowing Weight Adjustment Calculator</a></li>
-              <li><a href="tools/1-rep-max-calculator/">1 Rep Max Calculator</a></li>
           </ul>
       </li>
     </ul>
