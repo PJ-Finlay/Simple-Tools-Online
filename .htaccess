@@ -28,8 +28,8 @@ RewriteCond %{SCRIPT_FILENAME} !-d
 RewriteRule ^([^.]+)$ $1.php [NC,L]
 
 #Redirect .php to "clean" url
-RewriteCond %{THE_REQUEST} ^[A-Z]+\s.+\.php\sHTTP/.+
-RewriteRule ^(.+)\.php $1 [R=301,L]
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/+(.+?)\.php[\s?] [NC]
+RewriteRule ^ /%1 [R=301,L,NE]
 
 #Redirect to error pages
 ErrorDocument 404 /404.php
@@ -47,5 +47,5 @@ RewriteRule ^(.*)$ https://simpletoolsonline.com/$1 [L,R=301]
 
 #Redirect http traffic to https (but not on localhost)
 RewriteCond %{HTTP_HOST} !=localhost
-#RewriteCond %{HTTPS} !on
-#RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+RewriteCond %{HTTPS} !on
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
