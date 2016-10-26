@@ -45,8 +45,7 @@ RewriteRule ^(.*)$ https://simpletoolsonline.com/$1 [L,R=301]
     Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
 </IfModule>
 
-#######DISABLE FOR LOCALHOST#######
-
-#Redirect http traffic to https
+#Redirect http traffic to https (but not on localhost)
+RewriteCond %{HTTP_HOST} !=localhost
 #RewriteCond %{HTTPS} !on
 #RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
