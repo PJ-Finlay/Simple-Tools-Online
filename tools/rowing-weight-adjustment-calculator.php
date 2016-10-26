@@ -50,7 +50,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/php/header.php');
         <input type="number" id="distance">
     </fieldset>
 
-    <output class="outputContainer">
+    <div class="outputContainer">
         <table>
             <tr>
                 <td><label for="weightFactorOutput">Adjusted Weight Factor</label></td>
@@ -65,7 +65,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/php/header.php');
                 <td><output id="adjustedTimeOutput"></output></td>
             </tr>
         </table>
-    </output>
+    </div>
 
     <script>
         $(document).ready(function(){
@@ -144,4 +144,4 @@ include($_SERVER['DOCUMENT_ROOT'].'/php/header.php');
     </script>
 </article>
 
-<?php include($pathToRoot.'php/footer.php');?>
+<?php include($_SERVER['DOCUMENT_ROOT'].'php/footer.php');?>

@@ -73,4 +73,4 @@ include($_SERVER['DOCUMENT_ROOT'].'/php/header.php');
 </article>
 
 
-<?php include($pathToRoot.'php/footer.php');?>
+<?php include($_SERVER['DOCUMENT_ROOT'].'php/footer.php');?>

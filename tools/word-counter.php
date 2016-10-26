@@ -11,7 +11,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/php/header.php');
         <textarea id="textInput"></textarea>
     </fieldset>
 
-    <output class="outputContainer">
+    <div class="outputContainer">
         <table>
             <tr>
                 <td><label for="charactersOutput">Characters</label></td>
@@ -28,7 +28,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/php/header.php');
                 <td><output id="paragraphsOutput"></output></td>
             </tr>
         </table>
-    </output>
+    </div>
     <script type="text/javascript">
         $(document).ready(function(){
             function refreshResult(){
@@ -51,10 +51,9 @@ include($_SERVER['DOCUMENT_ROOT'].'/php/header.php');
                 }
                 $("#paragraphsOutput").text(paragraphs);
             }
-            refreshResult();
             setOnChangeListener(refreshResult);
         });
     </script>
 </article>
 
-<?php include($pathToRoot.'php/footer.php');?>
+<?php include($_SERVER['DOCUMENT_ROOT'].'php/footer.php');?>

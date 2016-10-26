@@ -83,19 +83,8 @@ $toolSubSectionBorderRadius: 5px;
 
 .outputContainer{
     @extend .toolSubSection;
-    display: inline-block;
     background-color: $outputContainerBackgroundColor;
     border-color: $outputContainerBorderColor;
-}
-
-.outputContainer{
-    label{
-        display: none;
-    }
-
-    td label{
-        display: initial !important;
-    }
 }
 
 .outputContainer output{
@@ -111,10 +100,8 @@ input[type="text"],input[type="number"],textarea {
 }
 
 textarea{
-    $width: 95%;
-    width: $width;
+    width: 100%;
     height: 10em;
-    margin-left: (100% - $width) / 2;
 }
 
 input[type="text"] ~ label,

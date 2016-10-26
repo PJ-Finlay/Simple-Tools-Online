@@ -1,5 +1,7 @@
 //Calls the given function every time that an input/select/textarea is changed within .tool
+//Also calls it once when the listener is set
 function setOnChangeListener(listener){
+    listener();
     $(".tool input,.tool  select,.tool  textarea").on('keydown change input', listener);
 }
 
@@ -10,4 +12,13 @@ function outputResult(resultSelector,value,decimalPlaces){
         value = 0;
     }
     $(resultSelector).text(value.toFixed(decimalPlaces));
+}
+
+
+
+//*****General Functions*****
+
+//Escapes regex from a string
+function escapeRegExp(string){
+  return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); // $& means the whole matched string
 }

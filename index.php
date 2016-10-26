@@ -2,17 +2,22 @@
 <section>
     <h1 id="toolsHeading">Tools</h1>
     <ul id="toolsList">
-        <li>Utility
-            <ul>
-                <li><a href="tools/tally-keeper/">Tally Keeper</a></li>
-                <li><a href="tools/word-counter/">Word Counter</a></li>
-            </ul>
-      </li>
       <li>Health & Fitness
           <ul>
-              <li><a href="tools/1-rep-max-calculator/">1 Rep Max Calculator</a></li>
-              <li><a href="tools/bmi-calculator/">BMI Calculator</a></li>
-              <li><a href="tools/rowing-weight-adjustment-calculator/">Rowing Weight Adjustment Calculator</a></li>
+              <li><a href="tools/1-rep-max-calculator">1 Rep Max Calculator</a></li>
+              <li><a href="tools/bmi-calculator">BMI Calculator</a></li>
+              <li><a href="tools/rowing-weight-adjustment-calculator">Rowing Weight Adjustment Calculator</a></li>
+          </ul>
+      </li>
+      <li>Text
+          <ul>
+              <li><a href="tools/find-and-replace-text">Find and Replace Text</a></li>
+          </ul>
+      </li>
+      <li>Utility
+          <ul>
+              <li><a href="tools/tally-keeper">Tally Keeper</a></li>
+              <li><a href="tools/word-counter">Word Counter</a></li>
           </ul>
       </li>
     </ul>

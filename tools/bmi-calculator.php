@@ -41,7 +41,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/php/header.php');
     </fieldset>
 
     <div class="outputContainer">
-        <label for="bmiOutput">BMI</label>
+        <label for="bmiOutput">BMI</label><br>
         <output id="bmiOutput"></output>
     </div>
 
@@ -106,10 +106,9 @@ include($_SERVER['DOCUMENT_ROOT'].'/php/header.php');
                 var bmi = weightKgs / (heightMeters * heightMeters);
                 outputResult("#bmiOutput",bmi,1)
             }
-            refreshResult();
             setOnChangeListener(refreshResult);
         });
     </script>
 </article>
 
-<?php include($pathToRoot.'php/footer.php');?>
+<?php include($_SERVER['DOCUMENT_ROOT'].'php/footer.php');?>
