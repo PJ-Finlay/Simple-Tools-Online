@@ -11,6 +11,10 @@
       </li>
       <li>Text
           <ul>
+              <li><a href="tools/capitalize-first-letter-of-every-word">Capitalize First Letter of Every Word</a></li>
+              <li><a href="tools/convert-to-lower-case">Convert to Lower Case</a></li>
+              <li><a href="tools/convert-to-sentence-case">Convert to Sentence Case</a></li>
+              <li><a href="tools/convert-to-upper-case">Convert to Upper Case</a></li>
               <li><a href="tools/find-and-replace-text">Find and Replace Text</a></li>
           </ul>
       </li>

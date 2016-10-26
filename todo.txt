@@ -10,6 +10,7 @@
 -Set caching settings
 -Write Meta descriptions
 -Look into https://developer.mozilla.org/en-US/docs/Web/Security/HTTP_strict_transport_security
+-Figure out RegExp for capitalization tools
 
 Tools:
 rapidtables.com
@@ -26,6 +27,7 @@ Time Calculator
 Descriptive Stats
 Text Tools (learn regex)
     -https://convertcase.net/
+        -Make a related tool dialog
     -http://textmechanic.com/
 Citation Generator
 Set of Random tool

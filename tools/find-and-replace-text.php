@@ -23,8 +23,8 @@ include($_SERVER['DOCUMENT_ROOT'].'/php/header.php');
 
     <div class="outputContainer">
         <label for="output">Result</label><br><br>
-        <output id="output">
-            <textarea></textarea>
+        <output>
+            <textarea id="output"></textarea>
         </output>
     </div>
     <script type="text/javascript">
@@ -42,7 +42,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/php/header.php');
                     find = escapeRegExp(find);
                     var findRegex = RegExp(find,regExpFlags)
                     var result = text.split(findRegex).join(replace);
-                    $("#output textarea").val(result);
+                    $("#output").val(result);
                 }
             }
             setOnChangeListener(refreshResult);
