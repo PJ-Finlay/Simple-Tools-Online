@@ -25,3 +25,5 @@ Text Tools (learn regex)
     -http://textmechanic.com/
 Citation Generator
 Dice/Card Random Generator
+More Personal Finance Tools
+Add similar tools dialog to case tools (should be a sidebar)

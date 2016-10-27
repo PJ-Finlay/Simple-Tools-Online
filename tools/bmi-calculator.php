@@ -104,7 +104,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/php/header.php');
                     console.log(heightMeters);
                 }
                 var bmi = weightKgs / (heightMeters * heightMeters);
-                outputResult("#bmiOutput",bmi,1)
+                outputResult("#bmiOutput",bmi,1);
             }
             setOnChangeListener(refreshResult);
         });
