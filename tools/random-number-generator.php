@@ -24,11 +24,15 @@ include($_SERVER['DOCUMENT_ROOT'].'/php/header.php');
     <script>
         $(document).ready(function(){
             function refreshResult(){
-                var lowerBound = $("#lowerBound").val();
-                var upperBound = $("#upperBound").val();
-                var seed = Math.random();
-                var result = Math.floor(((upperBound - lowerBound + 1) * seed) + lowerBound);
-                $("#randomOutput").val(result);
+                var lowerBound = Number($("#lowerBound").val());
+                var upperBound = Number($("#upperBound").val());
+                if(upperBound >= lowerBound){
+                    var seed = Math.random();
+                    var result = Math.floor((upperBound - lowerBound + 1) * seed) + lowerBound;
+                    $("#randomOutput").val(String(result));
+                }else{
+                    $("#randomOutput").val("Lower Bound Greater Than Upper Bound");
+                }
             }
             $("#generateButton").click(refreshResult);
             refreshResult();

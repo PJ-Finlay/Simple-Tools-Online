@@ -24,6 +24,4 @@ Text Tools (learn regex)
         -Make a related tool dialog
     -http://textmechanic.com/
 Citation Generator
-Set of Random tool
-    -Random int
-    -https://www.random.org/
+Dice/Card Random Generator
