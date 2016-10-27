@@ -20,6 +20,7 @@
       </li>
       <li>Utility
           <ul>
+              <li><a href="tools/random-number-generator">Random Number Generator</a></li>
               <li><a href="tools/tally-keeper">Tally Keeper</a></li>
               <li><a href="tools/word-counter">Word Counter</a></li>
           </ul>
