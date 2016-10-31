@@ -1,6 +1,14 @@
 // To do on every page
 $(document).ready(function(){
     $('input[type="number"]').attr('step','any'); //Make number inputs accept decimals
+
+    //Default all number inputs to 0
+    $('input[type="number"]').each(function(index){
+        var value = $(this).attr('value');
+        if (typeof value == typeof undefined || value == false) {
+            $(this).attr('value',0);
+        }
+    });
 });
 
 

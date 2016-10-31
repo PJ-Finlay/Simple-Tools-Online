@@ -7,7 +7,6 @@
 -Figure out RegExp for capitalization tools
 -Make .git and todo.txt return standard 404 instead of redirecting
 -Add similar tools dialog to case tools (should be a sidebar)
--Create error handling system example in quadratic equation
 
 Tools:
 https://www.dmoz.org/Science/Math/Calculators/Web-Based/
