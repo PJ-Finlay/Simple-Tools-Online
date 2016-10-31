@@ -5,8 +5,12 @@
 -Write Meta descriptions
 -Look into https://developer.mozilla.org/en-US/docs/Web/Security/HTTP_strict_transport_security
 -Figure out RegExp for capitalization tools
+-Make .git and todo.txt return standard 404 instead of redirecting
+-Add similar tools dialog to case tools (should be a sidebar)
+-Create error handling system example in quadratic equation
 
 Tools:
+https://www.dmoz.org/Science/Math/Calculators/Web-Based/
 rapidtables.com
 http://www.calculator.net/
 http://www.calculatorsoup.com/
@@ -16,8 +20,14 @@ http://textmechanic.com/
 
 TDE
 BMR
+Binary Calculator
+Straight Calculator
+Rowing splits calculator
+Tip Calculator
+Percent Change Calculator
 Age Calculator
 Time Calculator
+Lease Calculator
 Descriptive Stats
 Text Tools (learn regex)
     -https://convertcase.net/
@@ -25,5 +35,21 @@ Text Tools (learn regex)
     -http://textmechanic.com/
 Citation Generator
 Dice/Card Random Generator
-More Personal Finance Tools
-Add similar tools dialog to case tools (should be a sidebar)
+More Personal Finance Tools http://www.free-online-calculator-use.com/personal-finance-investing-calculators.html
+Baseball score keeper http://www.free-online-calculator-use.com/baseball-scorekeeper.html
+Combinations Calculator http://www.free-online-calculator-use.com/combination-calculator.html
+Quadratic Calculator
+
+
+SEO
+Places to try to get a link:
+http://toolstohelpyou.com/
+http://www.martindalecenter.com/Calculators.html
+http://mathfest.wikispaces.com/Online+Calculators
+
+-Look up links of competing sites and say that your site could "provide more value to their users"
+-Look into fiverr seo and backlink gigs
+
+Monetization:
+I could consider a monitization model like this selling the tools for people to put on their website:
+ http://tcalc.timevalue.com/all-financial-calculators.aspxhttp://tcalc.timevalue.com/all-financial-calculators.aspx

@@ -10,9 +10,9 @@ include($_SERVER['DOCUMENT_ROOT'].'/php/header.php');
     <fieldset>
         <legend>Bounds</legend>
         <label for="lowerBound">Lower Bound (Inclusive)</label><br>
-        <input id="lowerBound" type="number"><br>
+        <input id="lowerBound" type="number" value="1"><br>
         <label for="upperBound">Upper Bound (Inclusive)</label><br>
-        <input id="upperBound" type="number"><br><br>
+        <input id="upperBound" type="number" value="10"><br><br>
         <button id="generateButton">Generate</button>
     </fieldset>
 
@@ -40,4 +40,4 @@ include($_SERVER['DOCUMENT_ROOT'].'/php/header.php');
     </script>
 </article>
 
-<?php include($_SERVER['DOCUMENT_ROOT'].'php/footer.php');?>
+<?php include($_SERVER['DOCUMENT_ROOT'].'/php/footer.php');?>

@@ -26,7 +26,7 @@ main {
   text-decoration: none; }
 
 /* Tool */
-.toolSubSection, .toolDescription, .outputContainer, fieldset {
+.toolSubSection, .toolDescription, .outputContainer, .errorOutput, fieldset {
   margin: .5em;
   padding: 1em;
   border-radius: 5px;
@@ -47,11 +47,14 @@ main {
   background-color: #f4e7d7;
   border-color: GRAY; }
 
-.outputContainer {
+.outputContainer, .errorOutput {
   background-color: LIGHTGRAY;
   border-color: BLACK; }
 
-.outputContainer output {
+.errorOutput {
+  background-color: #F08080; }
+
+.outputContainer output, .errorOutput output {
   font-size: xx-large; }
 
 /* Forms */

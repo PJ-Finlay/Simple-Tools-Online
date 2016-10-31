@@ -111,4 +111,4 @@ include($_SERVER['DOCUMENT_ROOT'].'/php/header.php');
     </script>
 </article>
 
-<?php include($_SERVER['DOCUMENT_ROOT'].'php/footer.php');?>
+<?php include($_SERVER['DOCUMENT_ROOT'].'/php/footer.php');?>

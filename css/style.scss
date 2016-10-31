@@ -14,6 +14,7 @@ $fieldsetBorderColor: $accentColorDark;
 $toolDescriptionBackgroundColor: $accentColorOffWhite;
 $toolDescriptionBorderColor: GRAY;
 $outputContainerBackgroundColor: LIGHTGRAY;
+$errorOutputBackgroundColor: #F08080;
 $outputContainerBorderColor: BLACK;
 
 
@@ -85,6 +86,11 @@ $toolSubSectionBorderRadius: 5px;
     @extend .toolSubSection;
     background-color: $outputContainerBackgroundColor;
     border-color: $outputContainerBorderColor;
+}
+
+.errorOutput{
+    @extend  .outputContainer;
+    background-color: $errorOutputBackgroundColor;
 }
 
 .outputContainer output{
