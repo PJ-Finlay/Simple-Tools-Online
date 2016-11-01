@@ -7,6 +7,8 @@
 -Figure out RegExp for capitalization tools
 -Make .git and todo.txt return standard 404 instead of redirecting
 -Add similar tools dialog to case tools (should be a sidebar)
+-Add isnumeric check and look into making some new outputing methods
+-Make a decision n if I want to show errors or display 0 (I think I want to do error (look at percent change))
 
 Tools:
 https://www.dmoz.org/Science/Math/Calculators/Web-Based/
