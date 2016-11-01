@@ -30,10 +30,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/php/header.php');
                 n = Number($("#compoundFrequency").val());
                 t = Number($("#yearsToGrow").val());
                 var a = Math.pow(1 + r/n,n*t) * p; // A = P * (1 + r/n)^nt
-                a = a.toLocaleString('en',{
-                    style: 'currency',
-                    currency: 'USD'
-                });
+                a = moneyString(a);
                 $("#finalAmount").val(a)
             }
             setOnChangeListener(refreshResult);

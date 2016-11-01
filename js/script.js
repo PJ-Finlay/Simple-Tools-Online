@@ -30,6 +30,12 @@ function outputResult(resultSelector,value,decimalPlaces){
     $(resultSelector).text(value.toFixed(decimalPlaces));
 }
 
+function moneyString(value){
+    return value = value.toLocaleString('en',{
+        style: 'currency',
+        currency: 'USD'
+    });
+}
 
 
 //*****General Functions*****
