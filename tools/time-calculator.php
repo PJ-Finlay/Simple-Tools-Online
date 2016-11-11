@@ -61,7 +61,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/php/header.php');
                     var hours = Math.floor(result/(60*60));
                     result -= hours * (60*60);
                     var minutes = Math.floor(result/60);
-                    result -= minutes * t60;
+                    result -= minutes * 60;
                     var seconds = result;
 
                     hours = hours.format(0,2);
