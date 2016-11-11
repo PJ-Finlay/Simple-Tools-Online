@@ -91,6 +91,10 @@ fieldset legend {
 button {
   height: 2em; }
 
+select {
+  font-size: 200%;
+  padding: .25em .5em .25em .5em; }
+
 /* Tables */
 table {
   border-collapse: collapse; }

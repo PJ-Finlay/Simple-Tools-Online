@@ -7,8 +7,9 @@
 -Figure out RegExp for capitalization tools
 -Make .git and todo.txt return standard 404 instead of redirecting
 -Add similar tools dialog to case tools (should be a sidebar)
--Add isnumeric check and look into making some new outputing methods
--Make a decision n if I want to show errors or display 0 (I think I want to do error (look at percent change))
+-Rounding on percent change
+-Add contact page
+-Switch all tools over to new time-calculator format of outputting
 
 Tools:
 https://www.dmoz.org/Science/Math/Calculators/Web-Based/
@@ -24,7 +25,7 @@ BMR
 Binary Calculator
 Straight Calculator
 Rowing splits calculator
-Tip Calculator
+Bayes Rule Calculator
 Percent Change Calculator
 Age Calculator
 Time Calculator
@@ -46,7 +47,7 @@ Places to try to get a link:
 http://toolstohelpyou.com/
 http://www.martindalecenter.com/Calculators.html
 http://mathfest.wikispaces.com/Online+Calculators
-
+-Do something like this: http://www.calculator.net/calculators-for-your-site.html and get links by having people include calculator on their site
 -Look up links of competing sites and say that your site could "provide more value to their users"
 -Look into fiverr seo and backlink gigs
 

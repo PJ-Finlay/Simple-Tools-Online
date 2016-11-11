@@ -13,23 +13,25 @@ include($_SERVER['DOCUMENT_ROOT'].'/php/header.php');
         <input type="number"  id="secondValue"><br>
     </fieldset>
 
-    <div class="outputContainer">
-        <label for="percentChangeOutput">Percent Change</label><br>
-        <output id="percentChangeOutput"></output>
-    </div>
+    <div id="output"></div>
 
     <script>
         $(document).ready(function(){
             function refreshResult(){
                 var firstValue = Number($("#firstValue").val());
                 var secondValue = Number($("#secondValue").val());
-                var percentChange = (secondValue - firstValue)/Math.abs(firstValue);
-                percentChange *= 100;
-                if($.isNumeric(percentChange)){
-                    $("#percentChangeOutput").val(String(percentChange)+"%");
-                }else{
-                    $("#percentChangeOutput").val(String(0)+"%");
-                }
+
+                output(function(){
+                    if(!$.isNumeric(firstValue)) throw 'First Value is not a number';
+                    if(!$.isNumeric(secondValue)) throw 'Second Value is not a number';
+                    if(firstValue == 0) throw 'First Value cannot be 0';
+                    var percentChange = (secondValue - firstValue)/Math.abs(firstValue);
+                    percentChange *= 100;
+
+                    percentChange = percentChange.format(2);
+
+                    return percentChange + '%';
+                });
             }
             setOnChangeListener(refreshResult);
         });

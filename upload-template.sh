@@ -9,6 +9,6 @@ lftp -f "
 open $HOST
 user $USER $PASS
 lcd $LCD
-mirror --continue --reverse --delete --verbose --exclude .git --exclude todo.txt -X *.sass-cache -X *.xcf $LCD $RCD
+mirror --continue --reverse --delete --verbose --exclude .git --exclude todo.txt -X *.sass-cache -X *.xcf -X *.sh $LCD $RCD
 bye
 "
