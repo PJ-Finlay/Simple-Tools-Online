@@ -1,6 +1,5 @@
 /* General */
 html {
-  overflow: scroll;
   font-family: "Raleway", sans-serif;
   background-color: #F5F3F6;
   color: BLACK; }
@@ -11,7 +10,8 @@ body {
   padding: 0; }
 
 main {
-  padding: 1em; }
+  padding: 1em;
+  min-height: 100vh; }
 
 /* Header */
 .header {
@@ -19,10 +19,35 @@ main {
   background-color: #3366CC; }
 
 .header h1 {
-  margin: 0; }
+  margin: 0;
+  font-size: 200%; }
 
 .header a {
   color: BLACK;
+  text-decoration: none; }
+
+.header nav {
+  margin-top: 1em; }
+
+.header nav a {
+  margin-right: 1em; }
+
+/* Footer */
+footer {
+  background-color: #333333;
+  color: WHITE;
+  padding: 1em;
+  text-align: center; }
+
+footer #copyrightNotice {
+  float: left; }
+
+footer span {
+  margin-left: .5em;
+  margin-right: .5em; }
+
+footer a {
+  color: WHITE;
   text-decoration: none; }
 
 /* Tool */

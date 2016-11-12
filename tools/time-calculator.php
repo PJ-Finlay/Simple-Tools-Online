@@ -66,7 +66,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/php/header.php');
 
                     hours = hours.format(0,2);
                     minutes = minutes.format(0,2);
-                    seconds = seconds.format(0,2);
+                    seconds = seconds.format(2,2);
 
                     var signPrefix = '';
                     if(isNegative) signPrefix = '-';

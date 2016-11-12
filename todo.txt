@@ -10,6 +10,9 @@
 -Rounding on percent change
 -Add contact page
 -Switch all tools over to new time-calculator format of outputting
+    -This includes switching over to not using labels except for in tables
+-Prevent sass cache files from being tracked by git and uploaded to server
+-Add privacy policy/Terms of use
 
 Tools:
 https://www.dmoz.org/Science/Math/Calculators/Web-Based/
@@ -24,11 +27,8 @@ TDE
 BMR
 Binary Calculator
 Straight Calculator
-Rowing splits calculator
 Bayes Rule Calculator
-Percent Change Calculator
 Age Calculator
-Time Calculator
 Lease Calculator
 Descriptive Stats
 Text Tools (learn regex)
