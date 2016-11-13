@@ -7,7 +7,7 @@ include('php/header.php');
     <p>
         By using this website you agree to be bound by the following terms and conditions:<br>
         <ul>
-            <li>We provide no guarantee or responsibility for the content we link to.</li>
+            <li>No guarantee is provided or responsibility taken for the content linked to.</li>
             <li>Materials on this site are provided "as is", without warranty of any kind, express or implied.</li>
             <li>The Terms of Use and Privacy Policy can be updated at any time without notice.</li>
         </ul>
