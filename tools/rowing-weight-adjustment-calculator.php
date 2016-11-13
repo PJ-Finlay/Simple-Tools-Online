@@ -17,13 +17,13 @@ include($_SERVER['DOCUMENT_ROOT'].'/php/header.php');
     <fieldset id="weight-lbs-fieldset">
         <legend>Weight</legend>
         <label for="weight-lbs">Lbs</label><br>
-        <input type="number"  id="weight-lbs">
+        <input type="number"  id="weight-lbs" min="0">
     </fieldset>
 
     <fieldset id="weight-kgs-fieldset">
         <legend>Weight</legend>
         <label for="weight-kgs">Kgs</label><br>
-        <input type="number" id="weight-kgs">
+        <input type="number" id="weight-kgs" min="0">
     </fieldset>
 
     <fieldset>
@@ -37,35 +37,20 @@ include($_SERVER['DOCUMENT_ROOT'].'/php/header.php');
     <fieldset id="timeFieldset">
         <legend>Time</legend>
         <label for="timeHours">Hours</label><br>
-        <input type="number" id="timeHours"><br>
+        <input type="number" id="timeHours" min="0"><br>
         <label for="timeMinutes">Minutes</label><br>
-        <input type="number" id="timeMinutes"><br>
+        <input type="number" id="timeMinutes" min="0"><br>
         <label for="timeSeconds">Seconds</label><br>
-        <input type="number" id="timeSeconds">
+        <input type="number" id="timeSeconds" min="0">
     </fieldset>
 
     <fieldset id="distanceFieldset">
         <legend>Distance</legend>
         <label for="distance">Meters</label><br>
-        <input type="number" id="distance">
+        <input type="number" id="distance" min="0">
     </fieldset>
 
-    <div class="outputContainer">
-        <table>
-            <tr>
-                <td><label for="weightFactorOutput">Adjusted Weight Factor</label></td>
-                <td><output id="weightFactorOutput"></output></td>
-            </tr>
-            <tr id="adjustedDistanceRow">
-                <td><label for="adjustedDistanceOutput">Adjusted Distance</label></td>
-                <td><output id="adjustedDistanceOutput"></output></td>
-            </tr>
-            <tr id="adjustedTimeRow">
-                <td><label for="adjustedTimeOutput">Adjusted Time</label></td>
-                <td><output id="adjustedTimeOutput"></output></td>
-            </tr>
-        </table>
-    </div>
+    <div id="output"></div>
 
     <script>
         $(document).ready(function(){
@@ -85,7 +70,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/php/header.php');
             $("#unitType-metric").change(showMetric);
             showImperial();
             //Only show one of distance/time fields
-            var usingTime;
+            var usingTime = true;
             function showTime(){
                 $("#timeFieldset").show();
                 $("#distanceFieldset").hide();
@@ -111,29 +96,30 @@ include($_SERVER['DOCUMENT_ROOT'].'/php/header.php');
                 }else{
                     weightInLbs = $("#weight-kgs").val() * 2.20462;
                 }
-                var weightFactor = Math.pow((weightInLbs/270),.222);
-                outputResult("#weightFactorOutput",weightFactor,3);
-
-                if(usingTime){
-                    var timeInSeconds = Number($("#timeHours").val()*60*60) + Number($("#timeMinutes").val()*60) + Number($("#timeSeconds").val());
-                    var adjustedTimeInSeconds = weightFactor * timeInSeconds;
-                    if(!$.isNumeric(adjustedTimeInSeconds)){
-                        adjustedTimeInSeconds = 0;
+                output(function(){
+                    if(weightInLbs <= 0) throw "Weight must greater than 0";
+                    var weightFactor = Math.pow((weightInLbs/270),.222);
+                    var weightFactorString = weightFactor.format(3);
+                    if(usingTime){
+                        var timeInSeconds = Number($("#timeHours").val()*60*60) + Number($("#timeMinutes").val()*60) + Number($("#timeSeconds").val());
+                        if(timeInSeconds < 0) throw 'Time must be positive';
+                        var adjustedTimeInSeconds = weightFactor * timeInSeconds;
+                        var hours = Math.floor(adjustedTimeInSeconds/(60*60));
+                        adjustedTimeInSeconds -= hours * (60*60);
+                        var minutes = Math.floor(adjustedTimeInSeconds/60);
+                        adjustedTimeInSeconds -= minutes * 60;
+                        var seconds = adjustedTimeInSeconds.toFixed(2);
+                        var timeString = String(hours)+":"+String(minutes)+":"+seconds;
+                        var secondOutputTableRow = '<tr><td><label for="adjustedTimeOutput">Adjusted Time</label></td><td><output id="adjustedTimeOutput">' + timeString + '</output></td></tr>'
+                    }else{
+                        var distance = $("#distance").val();
+                        if(distance < 0) throw 'Distance must be positive';
+                        var correctedDistance = distance / weightFactor;
+                        var distanceString = correctedDistance.format(2) + "m";
+                        var secondOutputTableRow = '<tr><td><label for="adjustedDistanceOutput">Adjusted Distance</label></td><td><output id="adjustedDistanceOutput">' + distanceString + '</output></td></tr>'
                     }
-                    var hours = Math.floor(adjustedTimeInSeconds/(60*60));
-                    adjustedTimeInSeconds -= hours * (60*60);
-                    var minutes = Math.floor(adjustedTimeInSeconds/60);
-                    adjustedTimeInSeconds -= minutes * 60;
-                    var seconds = adjustedTimeInSeconds.toFixed(2);
-                    var timeString = String(hours)+":"+String(minutes)+":"+seconds;
-                    $("#adjustedTimeOutput").val(timeString);
-                }else{
-                    var correctedDistance = $("#distance").val() / weightFactor;
-                    if(!$.isNumeric(correctedDistance)){
-                        correctedDistance = 0;
-                    }
-                    $("#adjustedDistanceOutput").val(correctedDistance.toFixed(2)+"m");
-                }
+                    return '<table><tr><td><label for="weightFactorOutput">Weight Factor</label></td><td><output id="weightFactorOutput">' + weightFactorString + '</output></td></tr>' + secondOutputTableRow + '</table>'
+                });
             }
             refreshResult();
             usingTime = !usingTime;

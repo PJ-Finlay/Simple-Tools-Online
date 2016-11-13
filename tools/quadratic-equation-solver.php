@@ -6,54 +6,38 @@ include($_SERVER['DOCUMENT_ROOT'].'/php/header.php');
 <article class="tool">
     <h1>Quadratic Equation Solver</h1>
     <fieldset>
-        <label for="a">A</label><br>
+        <label for="a">a</label><br>
         <input id="a" type="number"><br>
-        <label for="b">B</label><br>
+        <label for="b">b</label><br>
         <input id="b" type="number"><br>
-        <label for="c">C</label><br>
+        <label for="c">c</label><br>
         <input id="c" type="number"><br>
     </fieldset>
 
-    <div class="outputContainer">
-        <label for="solution1">Solution 1</label><br>
-        <output id="solution1"></output><br><br>
-        <label for="solution2">Solution 2</label><br>
-        <output id="solution2"></output>
-    </div>
-    <div class="errorOutput">
-        <output id="errorOutput">asdf</output>
-    </div>
+    <div id="output"></div>
 
     <script>
 
         $(document).ready(function(){
-            function output(text1,text2){
-                $(".outputContainer").show();
-                $(".errorOutput").hide();
-                $("#solution1").val(text1.toFixed(4));
-                $("#solution2").val(text2.toFixed(4));
-            }
-            function outputError(message){
-                $(".outputContainer").hide();
-                $(".errorOutput").show();
-                $("#errorOutput").val(message);
-            }
-
             function refreshResult(){
                 var a = $("#a").val();
                 var b = $("#b").val();
                 var c = $("#c").val();
-                if(a != 0){
-                    if(b*b-4*a*c >= 0){
-                        var result1 = (-b + Math.sqrt(b*b-4*a*c))/(2*a);
-                        var result2 = (-b - Math.sqrt(b*b-4*a*c))/(2*a);
-                        output(result1,result2);
+                output(function(){
+                    if(a != 0){
+                        if(b*b-4*a*c >= 0){
+                            var result1 = (-b + Math.sqrt(b*b-4*a*c))/(2*a);
+                            var result2 = (-b - Math.sqrt(b*b-4*a*c))/(2*a);
+                            var r1String = result1.format(4);
+                            var r2String = result2.format(4);
+                            return '<label for="solution1">Solution 1</label><br><output id="solution1">' + r1String + '</output><br><br><label for="solution2">Solution 2</label><br><output id="solution2">' + r2String + '</output>'
+                        }else{
+                            throw "No real solutions";
+                        }
                     }else{
-                        outputError("No real solutions");
+                        throw "a can not be 0";
                     }
-                }else{
-                    outputError("a can not be 0");
-                }
+                });
             }
             setOnChangeListener(refreshResult);
         });

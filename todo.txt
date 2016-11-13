@@ -28,6 +28,7 @@ BMR
 Binary Calculator
 Straight Calculator
 Bayes Rule Calculator
+Ideal weight calculator
 Age Calculator
 Lease Calculator
 Descriptive Stats

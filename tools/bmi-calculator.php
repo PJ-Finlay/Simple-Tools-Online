@@ -40,10 +40,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/php/header.php');
         <input type="number" id="height-centimeters">
     </fieldset>
 
-    <div class="outputContainer">
-        <label for="bmiOutput">BMI</label><br>
-        <output id="bmiOutput"></output>
-    </div>
+    <div id='output'></div>
 
     <section class="toolDescription">
         <table>
@@ -101,10 +98,13 @@ include($_SERVER['DOCUMENT_ROOT'].'/php/header.php');
                 }else{
                     var weightKgs = Number($("#weight-kgs").val());
                     var heightMeters = Number($("#height-centimeters").val()) / 100;
-                    console.log(heightMeters);
                 }
-                var bmi = weightKgs / (heightMeters * heightMeters);
-                outputResult("#bmiOutput",bmi,1);
+                output(function(){
+                    if(weightKgs <= 0) throw "Weight must be positive";
+                    if(heightMeters <= 0) throw "Height must be positive";
+                    var bmi = weightKgs / (heightMeters * heightMeters);
+                    return bmi.format(2);
+                });
             }
             setOnChangeListener(refreshResult);
         });

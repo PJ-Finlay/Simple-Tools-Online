@@ -10,33 +10,28 @@ include($_SERVER['DOCUMENT_ROOT'].'/php/header.php');
     <fieldset id="weight-fieldset">
         <legend>Weight</legend>
         <label for="weight">Lbs or Kgs</label><br>
-        <input type="number"  id="weight">
+        <input type="number"  id="weight" min='0'>
     </fieldset>
 
     <fieldset id="reps-fieldset">
         <legend>Reps</legend>
-        <input type="number"  id="reps">
+        <input type="number"  id="reps" min='2'>
     </fieldset>
 
-    <div class="outputContainer">
-        <label for="1RMOutput">1RM</label><br>
-        <output id="1RMOutput"></output>
-    </div>
+    <div id="output"></div>
 
     <script>
         $(document).ready(function(){
             function refreshResult(){
                 var weight = Number($("#weight").val());
                 var reps = Number($("#reps").val());
-                if(reps == 1){
-                    outputResult("#1RMOutput",weight,1)
-                } else if(reps > 1){
+                output(function() {
+                    if(weight < 0) throw 'Weight must be at least 0';
+                    if(reps < 2) throw 'Reps must be at least 2';
                     //Epley Formula
                     var oneRepMax = weight * (1 + reps/30);
-                    outputResult("#1RMOutput",oneRepMax,1);
-                } else{
-                    outputResult("#1RMOutput",0,1);
-                }
+                    return oneRepMax.format(1);
+                });
             }
             setOnChangeListener(refreshResult);
         });
@@ -44,3 +39,4 @@ include($_SERVER['DOCUMENT_ROOT'].'/php/header.php');
 </article>
 
 <?php include($_SERVER['DOCUMENT_ROOT'].'/php/footer.php');?>
+;

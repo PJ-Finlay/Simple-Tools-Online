@@ -54,9 +54,6 @@ function moneyString(value){
     });
 }
 
-
-/*****General Functions*****/
-
 //Escapes regex from a string
 function escapeRegExp(string){
   return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
