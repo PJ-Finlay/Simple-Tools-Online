@@ -12,6 +12,7 @@
     -This includes switching over to not using labels except for in tables
 -Prevent sass cache files from being tracked by git and uploaded to server
 -Test for bugs
+-Fix footer links from dropping down on mobile
 
 Tools:
 https://www.dmoz.org/Science/Math/Calculators/Web-Based/

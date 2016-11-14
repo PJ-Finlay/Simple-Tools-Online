@@ -112,6 +112,7 @@ $toolSubSectionBorderRadius: 5px;
     @extend .toolSubSection;
     background-color: $outputContainerBackgroundColor;
     border-color: $outputContainerBorderColor;
+    font-size: large;
 }
 
 .errorOutput{
@@ -119,9 +120,6 @@ $toolSubSectionBorderRadius: 5px;
     background-color: $errorOutputBackgroundColor;
 }
 
-.outputContainer output{
-    font-size: xx-large;
-}
 
 /* Forms */
 input[type="text"],input[type="number"],textarea {

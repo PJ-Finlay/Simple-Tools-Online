@@ -70,13 +70,11 @@ footer a {
 
 .outputContainer, .errorOutput {
   background-color: LIGHTGRAY;
-  border-color: BLACK; }
+  border-color: BLACK;
+  font-size: large; }
 
 .errorOutput {
   background-color: #F08080; }
-
-.outputContainer output, .errorOutput output {
-  font-size: xx-large; }
 
 /* Forms */
 input[type="text"], input[type="number"], textarea {
