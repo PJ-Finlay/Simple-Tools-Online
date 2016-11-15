@@ -20,6 +20,7 @@
     -Check against other descriptive stats calculators to make sure that it includes everything it should
     -Check for accuracy
     -Add graphs
+    -Check on mode
 
 Tools:
 https://www.dmoz.org/Science/Math/Calculators/Web-Based/
