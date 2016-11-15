@@ -34,26 +34,12 @@ include($_SERVER['DOCUMENT_ROOT'].'/php/header.php');
                     var totalToPay = bill + totalTip;
                     var totalPerPerson = totalToPay / numberOfPeople;
 
-                    return ' \
-                       <table>\
-                            <tr>\
-                                <td><label for="totalTip">Total Tip</label></td>\
-                                <td><output id="totalTip">' + moneyString(totalTip) + '</output></td>\
-                            </tr>\
-                            <tr>\
-                                <td><label for="tipPerPerson">Tip Per Person</label></td>\
-                                <td><output id="tipPerPerson">' + moneyString(tipPerPerson) + '</output></td>\
-                            </tr>\
-                            <tr>\
-                                <td><label for="totalToPay">Total To Pay (Bill + Tip)</label></td>\
-                                <td><output id="totalToPay">' + moneyString(totalToPay) + '</output></td>\
-                            </tr>\
-                            <tr>\
-                                <td><label for="totalPerPerson">Total Per Person</label></td>\
-                                <td><output id="totalPerPerson">' + moneyString(totalPerPerson) + '</output></td>\
-                            </tr>\
-                        </table>\
-                    '
+                    totalTip = createTableRow("Total Tip", moneyString(totalTip));
+                    tipPerPerson = createTableRow("Tip Per Person",moneyString(tipPerPerson));
+                    totalToPay = createTableRow("Total To Pay",moneyString(totalToPay));
+                    totalPerPerson = createTableRow("Total Per Person",moneyString(totalPerPerson));
+
+                    return '<table>' + totalTip + tipPerPerson + totalToPay + totalPerPerson + '</table>'
                 });
             }
             setOnChangeListener(refreshResult);

@@ -13,6 +13,13 @@
 -Prevent sass cache files from being tracked by git and uploaded to server
 -Test for bugs
 -Fix footer links from dropping down on mobile
+-Finish Descriptive Stats
+    -Upload .csv file
+    -Style table caption (also make sure it is correct semantics)
+    -Include frequency Percentage
+    -Check against other descriptive stats calculators to make sure that it includes everything it should
+    -Check for accuracy
+    -Add graphs
 
 Tools:
 https://www.dmoz.org/Science/Math/Calculators/Web-Based/
@@ -41,6 +48,9 @@ Dice/Card Random Generator
 More Personal Finance Tools http://www.free-online-calculator-use.com/personal-finance-investing-calculators.html
 Baseball score keeper http://www.free-online-calculator-use.com/baseball-scorekeeper.html
 Combinations Calculator http://www.free-online-calculator-use.com/combination-calculator.html
+More stats calculators
+    -Z score Calculator
+    -Bayes Calculator
 
 
 SEO
@@ -51,6 +61,7 @@ http://mathfest.wikispaces.com/Online+Calculators
 -Do something like this: http://www.calculator.net/calculators-for-your-site.html and get links by having people include calculator on their site
 -Look up links of competing sites and say that your site could "provide more value to their users"
 -Look into fiverr seo and backlink gigs
+-Email stats
 
 Monetization:
 I could consider a monitization model like this selling the tools for people to put on their website:

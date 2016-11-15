@@ -1,4 +1,4 @@
-// To do on every page
+/********* Do on every page *********/
 $(document).ready(function(){
     $('input[type="number"]').attr('step','any'); //Make number inputs accept decimals
 
@@ -10,7 +10,6 @@ $(document).ready(function(){
         }
     });
 });
-
 
 /***** Ouput Functions ********/
 
@@ -89,4 +88,35 @@ function numberWithCommas(x) {
     var parts = x.toString().split(".");
     parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     return parts.join(".");
+}
+
+//Creates a string html table row in the form:
+// <tr><td><label for="id">name</label></td><td><output id="id">value</output></td></tr>
+// if no id is set an id is created as a camel case version of name with "Output" added at the end
+// use ids specifies if ids should even be included
+function createTableRow(name,value,useIds=true,id=undefined){
+    name = String(name);
+    value = String(value);
+    if(id == undefined && useIds){
+        id = name.split(/\s+/);
+        for(var i = 0; i < id.length; i++){ //Make everything lower case
+            id[i] = id[i].toLowerCase();
+        }
+        for(var i = 1; i < id.length; i++){ //Capitalize first letter of every word except the first
+            if(id[i].length > 1){
+                id[i] = id[i].substring(0,1).toUpperCase() + id[i].substring(1,id[i].length);
+            }
+        }
+        id = id.join("") + "Output";
+    }
+    if(useIds) return '<tr><td><label for="' + id + '">' + name + '</label></td><td><output id="' + id + '">' + value + '</output></td></tr>';
+    return '<tr><td>' + name + '</td><td>' + value + '</td></tr>';
+}
+
+//Creates HTML table string from array of string rows
+//headingHTML is inserted directly after the first table tag
+function createTable(rows,headingHTML = ''){
+    var toReturn = "<table>" + headingHTML;
+    for(var i = 0; i < rows.length; i++) toReturn += rows[i];
+    return toReturn + "</table>";
 }

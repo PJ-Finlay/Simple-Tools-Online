@@ -108,17 +108,18 @@ include($_SERVER['DOCUMENT_ROOT'].'/php/header.php');
                         adjustedTimeInSeconds -= hours * (60*60);
                         var minutes = Math.floor(adjustedTimeInSeconds/60);
                         adjustedTimeInSeconds -= minutes * 60;
-                        var seconds = adjustedTimeInSeconds.toFixed(2);
-                        var timeString = String(hours)+":"+String(minutes)+":"+seconds;
-                        var secondOutputTableRow = '<tr><td><label for="adjustedTimeOutput">Adjusted Time</label></td><td><output id="adjustedTimeOutput">' + timeString + '</output></td></tr>'
+                        var seconds = adjustedTimeInSeconds;
+                        var timeString = hours.format(0,2)+":"+minutes.format(0,2)+":"+seconds.format(2,2);
+                        var secondOutputTableRow = createTableRow("Adjusted Time",timeString);
                     }else{
                         var distance = $("#distance").val();
                         if(distance < 0) throw 'Distance must be positive';
                         var correctedDistance = distance / weightFactor;
                         var distanceString = correctedDistance.format(2) + "m";
-                        var secondOutputTableRow = '<tr><td><label for="adjustedDistanceOutput">Adjusted Distance</label></td><td><output id="adjustedDistanceOutput">' + distanceString + '</output></td></tr>'
+                        var secondOutputTableRow = createTableRow("Adjusted Distance",distanceString);
                     }
-                    return '<table><tr><td><label for="weightFactorOutput">Weight Factor</label></td><td><output id="weightFactorOutput">' + weightFactorString + '</output></td></tr>' + secondOutputTableRow + '</table>'
+                    var weightFactorRow = createTableRow("Weight Factor",weightFactorString);
+                    return '<table>' + weightFactorRow + secondOutputTableRow + '</table>'
                 });
             }
             refreshResult();
