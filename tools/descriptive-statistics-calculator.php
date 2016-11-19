@@ -27,13 +27,14 @@ include($_SERVER['DOCUMENT_ROOT'].'/php/header.php');
             if(!/.+\.csv/.test(selectedFile.name)){
                 alert("File must be in .csv format");
                 document.getElementById('fileInput').value = "";
+            }else{
+                var reader = new FileReader();
+                reader.onload = function() {
+                  $("#input").val(reader.result);
+                  refreshResult();
+                }
+                reader.readAsText(selectedFile); //Assumes UTF-8 encoding
             }
-            var reader = new FileReader();
-            reader.onload = function() {
-              $("#input").val(reader.result);
-              refreshResult();
-            }
-            reader.readAsText(selectedFile); //Assumes UTF-8 encoding
         }
         function refreshResult(){
             output(function() {
@@ -69,22 +70,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/php/header.php');
                 statsRows.push(createTableRow("Sample Standard Deviation",ss.sampleStandardDeviation(data)));
                 statsRows.push(createTableRow("Median Absolute Deviation",ss.medianAbsoluteDeviation(data)));
                 statsRows.push(createTableRow("Sum",ss.sum(data)));
-                var descriptiveStatsTable = createTable(statsRows);
-
-                var frequencyRows = [];
-                var count = 0;
-                for(var i = 0; i < data.length; i++){
-                    count++;
-                    if(i == data.length - 1 || data[i] != data[i+1]){
-                        var newRow = '<tr><td>'+String(data[i])+'</td><td>'+String(count)+'</td><td>'+((100*count)/data.length).format(2)+'%'+'</td></tr>';
-                        frequencyRows.push(newRow);
-                        count = 0;
-                    }
-                }
-                var headingHTML = '<caption>Frequency Table</caption><tr><th>Value</th><th>Frequency</th><th>Relative Frequency</th></tr>'
-                var frequencyTable = createTable(frequencyRows,headingHTML);
-
-                return descriptiveStatsTable + '<br>' + frequencyTable;
+                return createTable(statsRows);
             });
         }
         $(document).ready(function(){

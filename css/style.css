@@ -40,7 +40,8 @@ footer {
 
 footer span {
   margin-left: .5em;
-  margin-right: .5em; }
+  margin-right: .5em;
+  white-space: nowrap; }
 
 footer a {
   color: WHITE;
@@ -62,8 +63,9 @@ footer a {
   border-radius: 1em; }
 
 @media only screen and (max-device-width: 480px) {
-  .tool {
-    min-width: 90%; } }
+  main {
+    padding-left: 2px;
+    padding-top: 2px; } }
 .toolDescription {
   background-color: #f4e7d7;
   border-color: GRAY; }

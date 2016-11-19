@@ -13,16 +13,24 @@
 -Prevent sass cache files from being tracked by git and uploaded to server
 -Test for bugs
 -Fix footer links from dropping down on mobile
+-Make sidebar that has extra information about the tool that drops down on mobile
+	-Add short explanation to quadratic solver
 -Finish Descriptive Stats
-    -Upload .csv file
     -Style table caption (also make sure it is correct semantics)
-    -Include frequency Percentage
     -Check against other descriptive stats calculators to make sure that it includes everything it should
     -Check for accuracy
     -Add graphs
-    -Check on mode
+    -Check on modeth
+    -Deal with undefined geometric and harmonic means
+    -Do some sort of threading to deal with large data sets
+    -Do frequency distribution in chunks along with histogram
+    -Add box and wiskers plot
+    -Look into other graphs to have
+-Add to privacy policy (Like this http://www.thecollegefix.com/privacy-policy/)
+
 
 Tools:
+Great list -http://www.calculatorsoup.com/calculators/
 https://www.dmoz.org/Science/Math/Calculators/Web-Based/
 rapidtables.com
 http://www.calculator.net/
@@ -32,12 +40,15 @@ http://www.quickpicturetools.com/en/
 http://textmechanic.com/
 
 TDE
+Find JS LIbrary
+Figure out the charts api and make some chart based tools
 BMR
 Binary Calculator
 Straight Calculator
 Bayes Rule Calculator
 Ideal weight calculator
 Age Calculator
+LCM/GCF Calculator
 Lease Calculator
 Descriptive Stats
 Text Tools (learn regex)
