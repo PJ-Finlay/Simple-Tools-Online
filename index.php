@@ -20,6 +20,7 @@
             Math & Science
             <ul>
                 <li><a href="tools/descriptive-statistics-calculator">Descriptive Statistics Calculator</a></li>
+                <li><a href="tools/number-base-converter">Number Base Converter</a></li>
                 <li><a href="tools/percent-change-calculator">Percent Change Calculator</a></li>
                 <li><a href="tools/quadratic-equation-solver">Quadratic Equation Solver</a></li>
             </ul>

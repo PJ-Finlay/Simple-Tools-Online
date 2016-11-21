@@ -38,6 +38,7 @@ http://www.calculatorsoup.com/
 http://www.free-online-calculator-use.com/
 http://www.quickpicturetools.com/en/
 http://textmechanic.com/
+https://www.tools4noobs.com/online_tools/
 
 TDE
 Find JS LIbrary
@@ -60,6 +61,7 @@ Dice/Card Random Generator
 More Personal Finance Tools http://www.free-online-calculator-use.com/personal-finance-investing-calculators.html
 Baseball score keeper http://www.free-online-calculator-use.com/baseball-scorekeeper.html
 Combinations Calculator http://www.free-online-calculator-use.com/combination-calculator.html
+Roman numerals convertor
 More stats calculators
     -Z score Calculator
     -Bayes Calculator
