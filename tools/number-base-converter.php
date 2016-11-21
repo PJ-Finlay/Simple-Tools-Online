@@ -28,7 +28,6 @@ include($_SERVER['DOCUMENT_ROOT'].'/php/header.php');
                 var toBase = $("#toBase").val();
 
                 output(function(){
-                    if(!$.isNumeric(input)) throw 'Input number is not a number';
                     if(!$.isNumeric(fromBase)) throw 'From Base is not a number';
                     if(!$.isNumeric(toBase)) throw 'To Base is not a number';
                     if(fromBase < 2 || fromBase > 36) throw 'From Base must be between 2 and 36';
