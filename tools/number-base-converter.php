@@ -13,9 +13,9 @@ include($_SERVER['DOCUMENT_ROOT'].'/php/header.php');
 
     <fieldset>
         <label for="fromBase">From Base</label><br>
-        <input type="number"  id="fromBase" min="2" value="10"><br>
+        <input type="text"  id="fromBase" min="2" value="10" max="36"><br>
         <label for="toBase">To Base</label><br>
-        <input type="number"  id="toBase" min="2" value="2">
+        <input type="text"  id="toBase" min="2" value="2" max="36">
     </fieldset>
 
     <div id="output"></div>
@@ -31,8 +31,8 @@ include($_SERVER['DOCUMENT_ROOT'].'/php/header.php');
                     if(!$.isNumeric(input)) throw 'Input number is not a number';
                     if(!$.isNumeric(fromBase)) throw 'From Base is not a number';
                     if(!$.isNumeric(toBase)) throw 'To Base is not a number';
-                    if(fromBase < 2) throw 'From Base must be greater than 1';
-                    if(toBase < 2) throw 'To Base must be greater than 1';
+                    if(fromBase < 2 || fromBase > 36) throw 'From Base must be between 2 and 36';
+                    if(toBase < 2 || fromBase > 36) throw 'To Base must be between 2 and 36';
 
                     input = parseInt(input,Number(fromBase));
                     return input.toString(Number(toBase));

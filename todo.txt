@@ -27,6 +27,7 @@
     -Add box and wiskers plot
     -Look into other graphs to have
 -Add to privacy policy (Like this http://www.thecollegefix.com/privacy-policy/)
+-Also style inputs that default to text
 
 
 Tools:
