@@ -15,17 +15,6 @@
 -Fix footer links from dropping down on mobile
 -Make sidebar that has extra information about the tool that drops down on mobile
 	-Add short explanation to quadratic solver
--Finish Descriptive Stats
-    -Style table caption (also make sure it is correct semantics)
-    -Check against other descriptive stats calculators to make sure that it includes everything it should
-    -Check for accuracy
-    -Add graphs
-    -Check on modeth
-    -Deal with undefined geometric and harmonic means
-    -Do some sort of threading to deal with large data sets
-    -Do frequency distribution in chunks along with histogram
-    -Add box and wiskers plot
-    -Look into other graphs to have
 -Add to privacy policy (Like this http://www.thecollegefix.com/privacy-policy/)
 -Also style inputs that default to text
 
@@ -66,6 +55,7 @@ Roman numerals convertor
 More stats calculators
     -Z score Calculator
     -Bayes Calculator
+Cesarian Cipher
 
 
 SEO

@@ -122,6 +122,13 @@ $toolSubSectionBorderRadius: 5px;
     background-color: $errorOutputBackgroundColor;
 }
 
+.twoWayInputButton{
+    font-size: 1.5em;
+    width: 2em;
+    height: 2em;
+    margin: .5em;
+}
+
 
 /* Forms */
 input[type="text"],input[type="number"],textarea {

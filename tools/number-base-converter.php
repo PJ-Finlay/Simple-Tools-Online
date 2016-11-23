@@ -8,14 +8,14 @@ include($_SERVER['DOCUMENT_ROOT'].'/php/header.php');
 
     <fieldset>
         <label for="input">Number</label><br>
-        <input type="number"  id="input">
+        <input type="text" id="input" value="0">
     </fieldset>
 
     <fieldset>
         <label for="fromBase">From Base</label><br>
-        <input type="text"  id="fromBase" min="2" value="10" max="36"><br>
+        <input type="number"  id="fromBase" min="2" value="10" max="36"><br>
         <label for="toBase">To Base</label><br>
-        <input type="text"  id="toBase" min="2" value="2" max="36">
+        <input type="number"  id="toBase" min="2" value="2" max="36">
     </fieldset>
 
     <div id="output"></div>
@@ -32,8 +32,9 @@ include($_SERVER['DOCUMENT_ROOT'].'/php/header.php');
                     if(!$.isNumeric(toBase)) throw 'To Base is not a number';
                     if(fromBase < 2 || fromBase > 36) throw 'From Base must be between 2 and 36';
                     if(toBase < 2 || fromBase > 36) throw 'To Base must be between 2 and 36';
-
                     input = parseInt(input,Number(fromBase));
+                    if(!$.isNumeric(input)) throw 'Input not a valid number';
+
                     return input.toString(Number(toBase));
                 });
             }

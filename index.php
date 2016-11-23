@@ -40,6 +40,7 @@
             Utility
             <ul>
                 <li><a href="tools/random-number-generator">Random Number Generator</a></li>
+                <li><a href="tools/roman-numeral-converter">Roman Numeral Converter</a></li>
                 <li><a href="tools/tally-keeper">Tally Keeper</a></li>
                 <li><a href="tools/time-calculator">Time Calculator</a></li>
                 <li><a href="tools/tip-calculator">Tip Calculator</a></li>

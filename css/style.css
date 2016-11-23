@@ -78,6 +78,12 @@ footer a {
 .errorOutput {
   background-color: #F08080; }
 
+.twoWayInputButton {
+  font-size: 1.5em;
+  width: 2em;
+  height: 2em;
+  margin: .5em; }
+
 /* Forms */
 input[type="text"], input[type="number"], textarea {
   height: 2em;

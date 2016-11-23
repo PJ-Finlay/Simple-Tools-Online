@@ -53,6 +53,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/php/header.php');
                 //Calculate and print output using simple-statistics library
                 data = data.sort(function(a,b){return a-b});//Sort data
                 var statsRows = []; //Array of table rows
+                statsRows.push(createTableRow("Size",data.length));
                 statsRows.push(createTableRow("Min",ss.minSorted(data)));
                 statsRows.push(createTableRow("First Quartile",ss.quantileSorted(data,.25)));
                 statsRows.push(createTableRow("Median",ss.medianSorted(data)));

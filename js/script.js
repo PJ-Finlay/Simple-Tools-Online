@@ -9,6 +9,35 @@ $(document).ready(function(){
             $(this).attr('value',0);
         }
     });
+
+    //If <div id="twoWayInput"></div> is included in a page then this will create
+    // the ability to toggle both directions and automatically call
+    //The method twoWayInputDown()/twoWayInputUp() when the respective choices are made.
+    //This also allows you to throw errors in twoWayInputDown()/twoWayInputUp() which will be
+    //displayed in an error output box
+    var $twoWayInput = $("#twoWayInput");
+    if($twoWayInput.length > 0){
+        var $downButton = $('<button class="twoWayInputButton">↓</button>');
+        var $upButton = $('<button class="twoWayInputButton">↑</button>');
+        $upButton.click(function(){
+            clearError();
+            try{
+                twoWayInputUp();
+            }catch(error){
+                showError(error);
+            }
+        });
+        $downButton.click(function(){
+            clearError();
+            try{
+                twoWayInputDown();
+            }catch(error){
+                showError(error);
+            }
+        });
+        $twoWayInput.append($downButton);
+        $twoWayInput.append($upButton);
+    }
 });
 
 /***** Ouput Functions ********/
@@ -45,6 +74,17 @@ function output(outputFunction,autoWrapOutput=true){
         $output.html('<div class="errorOutput">' + error + '</div>');
     }
 }
+
+//Adds an error output div to end of tool. Make sure to clear error when it is no longer needed
+function showError(message){
+    $(".tool").append('<div class="errorOutput">' + message + '</div>');
+}
+
+//Deletes all error outputs
+function clearError(){
+    $(".errorOutput").remove();
+}
+
 
 function moneyString(value){
     return value = value.toLocaleString('en',{
@@ -83,6 +123,10 @@ Number.prototype.format = function(decimalPlaces,paddingLength = -1){
 
     return toReturn;
 }
+
+String.prototype.replaceAll = function(find, replace) {
+    return this.replace(new RegExp(find, 'g'), replace);
+};
 
 function numberWithCommas(x) {
     var parts = x.toString().split(".");
