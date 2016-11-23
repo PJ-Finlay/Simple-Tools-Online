@@ -35,7 +35,6 @@ echo '<!DOCTYPE html>
     <meta name="description" content="'.$description.'">
     <meta name="keywords" content="'.$keywords.'">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/script.js"></script>
 
