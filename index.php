@@ -26,6 +26,12 @@
             </ul>
         </li>
         <li>
+            Other
+            <ul>
+                <li><a href="tools/caesar-cipher-generator">Caesar Cipher Generator</a></li>
+            </ul>
+        </li>
+        <li>
             Text
             <ul>
                 <li><a href="tools/capitalize-first-letter-of-every-word">Capitalize First Letter of Every Word</a></li>

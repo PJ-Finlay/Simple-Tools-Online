@@ -30,7 +30,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/php/header.php');
     <script type="text/javascript">
         $(document).ready(function(){
             function refreshResult(){
-                var text = $("#textInput").val()
+                var text = $("#textInput").val();
                 var find = $("#find").val();
                 var replace = $("#replace").val();
                 var caseSensitive = $("#caseSensitive").prop("checked");

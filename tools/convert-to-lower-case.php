@@ -20,7 +20,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/php/header.php');
     <script type="text/javascript">
         $(document).ready(function(){
             function refreshResult(){
-                var text = $("#textInput").val()
+                var text = $("#textInput").val();
                 $("#output").val(text.toLowerCase());
             }
             setOnChangeListener(refreshResult);
