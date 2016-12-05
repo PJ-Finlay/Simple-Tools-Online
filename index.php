@@ -68,6 +68,18 @@
         <h1>Reference</h1>
         <ul class="linksList">
             <li>
+                Math & Science
+                <ul>
+                    <li><a href="reference/periodic-table-of-elements">Periodic Table of Elements</a></li>
+                </ul>
+            </li>
+            <li>
+                Other
+                <ul>
+                    <li><a href="reference/morse-code">Morse Code</a></li>
+                </ul>
+            </li>
+            <li>
                 Technology
                 <ul>
                     <li><a href="reference/ansii-table">ANSII Table</a></li>

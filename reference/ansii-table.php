@@ -3,6 +3,7 @@ $toolName = "ANSII Table";
 include($_SERVER['DOCUMENT_ROOT'].'/php/header.php');
 ?>
 <article>
+    <h1>ANSII Table</h1>
     <table>
         <tr>
             <th>Dec</th>

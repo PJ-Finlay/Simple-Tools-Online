@@ -57,6 +57,7 @@ More stats calculators
     -Z score Calculator
     -Bayes Calculator
 CSV to html table converter
+Morse code converter
 
 
 SEO

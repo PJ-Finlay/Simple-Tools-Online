@@ -44,14 +44,6 @@ include($_SERVER['DOCUMENT_ROOT'].'/php/header.php');
         function refreshResult(){
             //Get input
             var inputString = $("#input").val();
-            var splitInput = inputString.split(/[,\n\s]+/);
-            var data = [];
-            for(var i = 0; i < splitInput.length; i++){
-                if(splitInput[i].length > 0){ //Ignore any blank inputs
-                    var dataPoint = Number(splitInput[i]);
-                    data.push(dataPoint);
-                }
-            }
             var useHeaders = $("#useHeaders").is(':checked');
 
             var parsedCSV = Papa.parse(inputString).data;
