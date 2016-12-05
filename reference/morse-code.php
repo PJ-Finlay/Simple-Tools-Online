@@ -115,4 +115,4 @@ include($_SERVER['DOCUMENT_ROOT'].'/php/header.php');
         </tr>
     </table>
 </article>
-<?php include('php/footer.php');?>
+<?php include($_SERVER['DOCUMENT_ROOT'].'/php/footer.php');?>

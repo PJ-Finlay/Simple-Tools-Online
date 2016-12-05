@@ -9,4 +9,4 @@ include($_SERVER['DOCUMENT_ROOT'].'/php/header.php');
         <img class="fullPageImage" src="reference/resources/periodic-table-of-elements.png" alt="Periodic Table of Elements">
     </a>
 </article>
-<?php include('php/footer.php');?>
+<?php include($_SERVER['DOCUMENT_ROOT'].'/php/footer.php');?>
