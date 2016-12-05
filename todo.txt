@@ -3,6 +3,7 @@
 -Try various site checkers
 -Go through list of web best practices
 -Write Meta descriptions
+-Rename $toolName variable on all pages to $pageTitle
 -Look into https://developer.mozilla.org/en-US/docs/Web/Security/HTTP_strict_transport_security
 -Figure out RegExp for capitalization tools
 -Make .git and todo.txt return standard 404 instead of redirecting
@@ -17,6 +18,7 @@
 	-Add short explanation to quadratic solver
 -Add to privacy policy (Like this http://www.thecollegefix.com/privacy-policy/)
 -Also style inputs that default to text
+-Add all functions to descriptive statistics keywords
 
 
 Tools:
@@ -51,11 +53,10 @@ Dice/Card Random Generator
 More Personal Finance Tools http://www.free-online-calculator-use.com/personal-finance-investing-calculators.html
 Baseball score keeper http://www.free-online-calculator-use.com/baseball-scorekeeper.html
 Combinations Calculator http://www.free-online-calculator-use.com/combination-calculator.html
-Roman numerals convertor
 More stats calculators
     -Z score Calculator
     -Bayes Calculator
-Cesarian Cipher
+CSV to html table converter
 
 
 SEO

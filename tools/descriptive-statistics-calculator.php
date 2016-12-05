@@ -78,7 +78,6 @@ include($_SERVER['DOCUMENT_ROOT'].'/php/header.php');
             setOnChangeListener(refreshResult);
         });
     </script>
-    <!--Add everything to keywords -->
 </article>
 
 <?php include($_SERVER['DOCUMENT_ROOT'].'/php/footer.php');?>

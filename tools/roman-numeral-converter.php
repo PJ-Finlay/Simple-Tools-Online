@@ -56,7 +56,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/php/header.php');
 
     function toRoman(input) {
         //Uses Unicode Roman Numerals
-        var key = {Ⅿ:1000,ⅭⅯ:900,Ⅾ:500,ⅭⅮ:400,Ⅽ:100,ⅩⅭ:90,Ⅼ:50,ⅩⅬ:40,Ⅻ:12,Ⅺ:11,Ⅹ:10,Ⅸ:9,Ⅷ:8,Ⅶ:7,Ⅵ:6,Ⅴ:5,Ⅳ:4,Ⅲ:3,Ⅱ:2,Ⅰ:1};
+        var key = {Ⅿ:1000,ⅭⅯ:900,Ⅾ:500,ⅭⅮ:400,Ⅽ:100,ⅩⅭ:90,Ⅼ:50,ⅩⅬ:40,Ⅹ:10,Ⅸ:9,Ⅴ:5,Ⅳ:4,Ⅰ:1};
         var toReturn = '';
         for(i in key){
             while(input >= key[i]){
