@@ -1,6 +1,6 @@
 <?php
 $siteName = "Simple Tools Online";
-$defaultKeywords = "online, tool"; //Added to any keywords put in the keywords variable
+$defaultKeywords = "online, tool, reference"; //Added to any keywords put in the keywords variable
 
 if(!isset($toolName)){
     $toolName = $siteName;

@@ -29,7 +29,14 @@
             <li>
                 Other
                 <ul>
+                    <!--<li><a href="tools/age-calculator">Age Calculator</a></li>-->
                     <li><a href="tools/caesar-cipher-generator">Caesar Cipher Generator</a></li>
+                    <li><a href="tools/clock">Clock</a></li>
+                    <li><a href="tools/random-number-generator">Random Number Generator</a></li>
+                    <li><a href="tools/roman-numeral-converter">Roman Numeral Converter</a></li>
+                    <li><a href="tools/tally-keeper">Tally Keeper</a></li>
+                    <li><a href="tools/time-calculator">Time Calculator</a></li>
+                    <li><a href="tools/tip-calculator">Tip Calculator</a></li>
                 </ul>
             </li>
             <li>
@@ -50,16 +57,6 @@
                     <li><a href="tools/convert-to-upper-case">Convert to Upper Case</a></li>
                     <li><a href="tools/find-and-replace-text">Find and Replace Text</a></li>
                     <li><a href="tools/word-counter">Word Counter</a></li>
-                </ul>
-            </li>
-            <li>
-                Utility
-                <ul>
-                    <li><a href="tools/random-number-generator">Random Number Generator</a></li>
-                    <li><a href="tools/roman-numeral-converter">Roman Numeral Converter</a></li>
-                    <li><a href="tools/tally-keeper">Tally Keeper</a></li>
-                    <li><a href="tools/time-calculator">Time Calculator</a></li>
-                    <li><a href="tools/tip-calculator">Tip Calculator</a></li>
                 </ul>
             </li>
         </ul>

@@ -58,6 +58,8 @@ More stats calculators
     -Bayes Calculator
 CSV to html table converter
 Morse code converter
+Switch Descriptive statistics to csv parsing library
+Timer
 
 
 SEO
