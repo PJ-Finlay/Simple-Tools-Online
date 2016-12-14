@@ -148,6 +148,14 @@ th {
 .fullscreenToggle > i {
   font-size: 36px; }
 
+.fullscreenToggle {
+  display: block;
+  margin: .5em; }
+
+.fullscreen {
+  width: 100%;
+  height: 100%; }
+
 /*Mobile Styles*/
 @media only screen and (max-width: 500px) {
   .tool {

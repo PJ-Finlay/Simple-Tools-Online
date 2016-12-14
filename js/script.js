@@ -54,18 +54,27 @@ $(document).ready(function(){
         $(document).bind("fullscreenchange", function() {
             if($(document).fullScreen()){
                 $icon.text("fullscreen_exit");
+                $("main").addClass("fullscreen");
             }else{
                 $icon.text("fullscreen");
+                $("main").removeClass("fullscreen");
+                $icon.finish();
             }
         });
         $fullscreenDiv.append($fullscreenToggle);
 
         //Make button dissapear when not hovering in fullscreen
         $icon.mouseleave(function() {
-            if(isFullscreen) $icon.delay(1000).fadeTo(1000, 0);
+            if(isFullscreen){
+                $icon.stop();
+                $icon.delay(1000).fadeTo(1000, 0);
+            }
         });
         $icon.mouseenter(function() {
-            if(isFullscreen) $icon.stop().fadeTo(300, 1);
+            if(isFullscreen){
+                $icon.stop();
+                $icon.fadeTo(300, 1);
+            }
         })
     }
 });
