@@ -2,6 +2,7 @@
 $toolName = "Clock";
 include($_SERVER['DOCUMENT_ROOT'].'/php/header.php');
 ?>
+<div id="fullscreenButton"></div>
 <article>
     <div id="clock">
         <span id="hoursMinutes"></span>
@@ -18,19 +19,24 @@ include($_SERVER['DOCUMENT_ROOT'].'/php/header.php');
             text-align: center;
             padding-top: 33vh;
         }
+
         #hoursMinutes{
             font-size: 10em;
         }
+
         #amPMSecondsDiv{
             display: inline-block;
             margin-left: 1em;
         }
+
         #amPm{
             font-size: 3em;
         }
+
         #seconds{
             font-size: 3em;
         }
+
         #date{
             font-size: 2em
         }
@@ -56,7 +62,10 @@ include($_SERVER['DOCUMENT_ROOT'].'/php/header.php');
             var monthsArray = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
             var month = monthsArray[month];
             var date = date.getDate();
-            $("#hoursMinutes").html(String(hours) + ":" + minutes.format(0,2));
+            var timeString = String(hours) + ":" + minutes.format(0,2);
+            $("#hoursMinutes").html(timeString);
+            timeString += ":" + seconds.format(0,2);
+            document.title = timeString;
             $("#amPm").html(amPm);
             $("#seconds").html(seconds.format(0,2));
             $("#date").html(dayOfWeek + ' - ' + month + ' ' + date);

@@ -33,6 +33,7 @@ body{
 main{
     padding: 1em;
     min-height: 100vh;
+    background-color: $backgroundColor;
 }
 
 /* Header */
@@ -205,14 +206,10 @@ th{
 }
 
 /* Special Styles */
-/*
-.fullscreen{
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-}*/
+.fullscreenToggle > i{
+    font-size: 36px;
+}
+
 
 /*Mobile Styles*/
 @media only screen and (max-width: 500px) {

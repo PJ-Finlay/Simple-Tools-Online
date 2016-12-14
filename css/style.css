@@ -11,7 +11,8 @@ body {
 
 main {
   padding: 1em;
-  min-height: 100vh; }
+  min-height: 100vh;
+  background-color: #F5F3F6; }
 
 /* Header */
 .header {
@@ -144,14 +145,9 @@ th {
   background-color: rgba(0, 0, 0, 0.2); }
 
 /* Special Styles */
-/*
-.fullscreen{
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-}*/
+.fullscreenToggle > i {
+  font-size: 36px; }
+
 /*Mobile Styles*/
 @media only screen and (max-width: 500px) {
   .tool {

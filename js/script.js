@@ -38,6 +38,36 @@ $(document).ready(function(){
         $twoWayInput.append($downButton);
         $twoWayInput.append($upButton);
     }
+
+    //Add <div id="fullscreenButton"></div> at the top of the <main> section to make a fullscreen toggle button
+    var $fullscreenDiv = $("#fullscreenButton");
+    if($fullscreenDiv.length > 0){
+        $fullscreenDiv.html('<script src="libs/kayahr-jquery-fullscreen-plugin/jquery.fullscreen-min.js"></script>');
+        var $fullscreenToggle = $('<a class="fullscreenToggle"></a>');
+        var $icon = $('<i class="material-icons">fullscreen</i>');
+        $fullscreenToggle.append($icon);
+        var isFullscreen = false;
+        $fullscreenToggle.click(function(){
+            isFullscreen = !isFullscreen;
+            $("main").fullScreen(isFullscreen);
+        });
+        $(document).bind("fullscreenchange", function() {
+            if($(document).fullScreen()){
+                $icon.text("fullscreen_exit");
+            }else{
+                $icon.text("fullscreen");
+            }
+        });
+        $fullscreenDiv.append($fullscreenToggle);
+
+        //Make button dissapear when not hovering in fullscreen
+        $icon.mouseleave(function() {
+            if(isFullscreen) $icon.delay(1000).fadeTo(1000, 0);
+        });
+        $icon.mouseenter(function() {
+            if(isFullscreen) $icon.stop().fadeTo(300, 1);
+        })
+    }
 });
 
 /***** Ouput Functions ********/

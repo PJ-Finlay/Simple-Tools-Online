@@ -48,6 +48,9 @@ echo '<!DOCTYPE html>
     <meta name="msapplication-config" content="images/icons/browserconfig.xml">
     <meta name="theme-color" content="#3b1fad">
 
+    <!-- Include Material Icons -->
+    <link rel="stylesheet" href="libs/material-icons/material-icons.css">
+
     <!-- Google Analytics -->
     <script>
       (function(i,s,o,g,r,a,m){i[\'GoogleAnalyticsObject\']=r;i[r]=i[r]||function(){
