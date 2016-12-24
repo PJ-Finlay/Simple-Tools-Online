@@ -22,6 +22,8 @@
                 <ul>
                     <li><a href="tools/binary-decimal-converter">Binary Decimal Converter</a></li>
                     <li><a href="tools/descriptive-statistics-calculator">Descriptive Statistics Calculator</a></li>
+                    <li><a href="tools/greatest-common-factor-calculator">Greatest Common Factor Calculator</a></li>
+                    <li><a href="tools/least-common-multiple-calculator">Least Common Multiple Calculator</a></li>
                     <li><a href="tools/number-base-converter">Number Base Converter</a></li>
                     <li><a href="tools/percent-change-calculator">Percent Change Calculator</a></li>
                     <li><a href="tools/quadratic-equation-solver">Quadratic Equation Solver</a></li>

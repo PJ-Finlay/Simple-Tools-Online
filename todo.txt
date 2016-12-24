@@ -39,6 +39,7 @@ Figure out the charts api and make some chart based tools
 BMR
 Binary Calculator
 Straight Calculator
+Poker hands calculator
 Bayes Rule Calculator
 Ideal weight calculator
 Age Calculator
