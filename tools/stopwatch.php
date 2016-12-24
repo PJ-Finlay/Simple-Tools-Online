@@ -50,7 +50,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/php/header.php');
         updateTime();
         $("#startStop").click(function(){startStop()});
         $("#reset").click(function(){reset()});
-        window.setInterval(updateTime, 100);
+        window.setInterval(updateTime, 1);
 
 
         function updateTime(){

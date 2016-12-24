@@ -20,6 +20,7 @@
             <li>
                 Math & Science
                 <ul>
+                    <li><a href="tools/binary-decimal-converter">Binary Decimal Converter</a></li>
                     <li><a href="tools/descriptive-statistics-calculator">Descriptive Statistics Calculator</a></li>
                     <li><a href="tools/number-base-converter">Number Base Converter</a></li>
                     <li><a href="tools/percent-change-calculator">Percent Change Calculator</a></li>
