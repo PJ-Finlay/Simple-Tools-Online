@@ -19,6 +19,7 @@
 -Add to privacy policy (Like this http://www.thecollegefix.com/privacy-policy/)
 -Also style inputs that default to text
 -Add all functions to descriptive statistics keywords
+-Better searching (using keywords and fuzzy)
 -Resistor Color Code
 
 

@@ -1,16 +1,19 @@
 <?php include('php/header.php');?>
 <article>
-    <section>
+    <section id="mainSearchSection">
+        <input id="mainSearch" type="search" placeholder="Search"></input>
+    </section>
+    <section class="linksSection">
         <h1>Tools</h1>
         <ul class="linksList">
             <li>
-                Finance
+                <span>Finance</span>
                 <ul>
                     <li><a href="tools/compound-interest-calculator">Compound Interest Calculator</a></li>
                 </ul>
             </li>
             <li>
-                Health & Fitness
+                <span>Health & Fitness</span>
                 <ul>
                     <li><a href="tools/1-rep-max-calculator">1 Rep Max Calculator</a></li>
                     <li><a href="tools/bmi-calculator">BMI Calculator</a></li>
@@ -18,7 +21,7 @@
                 </ul>
             </li>
             <li>
-                Math & Science
+                <span>Math & Science</span>
                 <ul>
                     <li><a href="tools/binary-decimal-converter">Binary Decimal Converter</a></li>
                     <li><a href="tools/descriptive-statistics-calculator">Descriptive Statistics Calculator</a></li>
@@ -27,10 +30,10 @@
                     <li><a href="tools/number-base-converter">Number Base Converter</a></li>
                     <li><a href="tools/percent-change-calculator">Percent Change Calculator</a></li>
                     <li><a href="tools/quadratic-equation-solver">Quadratic Equation Solver</a></li>
-                </ul>
+                <span></ul>
             </li>
             <li>
-                Other
+                <span>Other</span>
                 <ul>
                     <li><a href="tools/caesar-cipher-generator">Caesar Cipher Generator</a></li>
                     <li><a href="tools/random-number-generator">Random Number Generator</a></li>
@@ -40,7 +43,7 @@
                 </ul>
             </li>
             <li>
-                Time Tools
+                <span>Time Tools</span>
                 <ul>
                     <!--<li><a href="tools/age-calculator">Age Calculator</a></li>-->
                     <li><a href="tools/clock">Clock</a></li>
@@ -49,7 +52,7 @@
                 </ul>
             </li>
             <li>
-                Technology
+                <span>Technology</span>
                 <ul>
                     <li><a href="tools/caesar-cipher-generator">Caesar Cipher Generator</a></li>
                     <li><a href="tools/random-number-generator">Random Number Generator</a></li>
@@ -59,7 +62,7 @@
                 </ul>
             </li>
             <li>
-                Text
+                <span>Text</span>
                 <ul>
                     <li><a href="tools/capitalize-first-letter-of-every-word">Capitalize First Letter of Every Word</a></li>
                     <li><a href="tools/convert-to-lower-case">Convert to Lower Case</a></li>
@@ -71,23 +74,23 @@
             </li>
         </ul>
     </section>
-    <section>
+    <section class="linksSection">
         <h1>Reference</h1>
         <ul class="linksList">
             <li>
-                Math & Science
+                <span>Math & Science</span>
                 <ul>
                     <li><a href="reference/periodic-table-of-elements">Periodic Table of Elements</a></li>
                 </ul>
             </li>
             <li>
-                Other
+                <span>Other</span>
                 <ul>
                     <li><a href="reference/morse-code">Morse Code</a></li>
                 </ul>
             </li>
             <li>
-                Technology
+                <span>Technology</span>
                 <ul>
                     <li><a href="reference/ansii-table">ANSII Table</a></li>
                 </ul>
@@ -109,5 +112,26 @@
         margin: .5em;
     }
     </style>
+    <script>
+    //Handle search
+    var search = $("#mainSearch");
+    search.on('keydown change input',function(){
+        var links = $(".linksList > li > ul > li");
+        var titles = $(".linksList > li > span,.linksSection > h1");
+        titles.show();
+        links.show();
+        if(search.val().length > 0){
+            titles.hide();
+            links.each(function(){
+                var title = $(this).text().toLowerCase();
+                var searchKey = search.val().toLowerCase();
+                if(!title.includes(searchKey)){
+                    $(this).hide();
+                }
+            })
+        }
+    });
+
+    </script>
 </article>
 <?php include('php/footer.php');?>

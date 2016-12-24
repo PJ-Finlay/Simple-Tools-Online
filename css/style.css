@@ -86,7 +86,7 @@ footer a {
   margin: .5em; }
 
 /* Forms */
-input[type="text"], input[type="number"], textarea {
+input[type="text"], input[type="number"], input[type="search"], textarea {
   height: 2em;
   padding: .3em;
   border-radius: .3em;
@@ -155,6 +155,12 @@ th {
 .fullscreen {
   width: 100%;
   height: 100%; }
+
+#mainSearch {
+  height: 4em;
+  width: 40em;
+  padding: .75em;
+  max-width: 95%; }
 
 /*Mobile Styles*/
 @media only screen and (max-width: 500px) {
