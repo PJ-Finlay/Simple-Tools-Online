@@ -36,6 +36,20 @@ main{
     background-color: $backgroundColor;
 }
 
+aside{
+    background-color: $accentColorOffWhite;
+    display: inline-block;
+    padding:1em;
+    margin-left: 2em;
+    border-radius: 1em;
+    vertical-align: top;
+    text-align: center;
+}
+
+aside > ul{
+    text-align: left;
+}
+
 /* Header */
 .header{
     padding:1.75em;

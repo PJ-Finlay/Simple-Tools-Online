@@ -25,8 +25,6 @@
                 <ul>
                     <li><a href="tools/binary-decimal-converter">Binary Decimal Converter</a></li>
                     <li><a href="tools/descriptive-statistics-calculator">Descriptive Statistics Calculator</a></li>
-                    <li><a href="tools/greatest-common-factor-calculator">Greatest Common Factor Calculator</a></li>
-                    <li><a href="tools/least-common-multiple-calculator">Least Common Multiple Calculator</a></li>
                     <li><a href="tools/number-base-converter">Number Base Converter</a></li>
                     <li><a href="tools/percent-change-calculator">Percent Change Calculator</a></li>
                     <li><a href="tools/quadratic-equation-solver">Quadratic Equation Solver</a></li>
@@ -45,20 +43,9 @@
             <li>
                 <span>Time Tools</span>
                 <ul>
-                    <!--<li><a href="tools/age-calculator">Age Calculator</a></li>-->
                     <li><a href="tools/clock">Clock</a></li>
                     <li><a href="tools/time-calculator">Time Calculator</a></li>
                     <li><a href="tools/stopwatch">Stopwatch</a></li>
-                </ul>
-            </li>
-            <li>
-                <span>Technology</span>
-                <ul>
-                    <li><a href="tools/caesar-cipher-generator">Caesar Cipher Generator</a></li>
-                    <li><a href="tools/random-number-generator">Random Number Generator</a></li>
-                    <li><a href="tools/roman-numeral-converter">Roman Numeral Converter</a></li>
-                    <li><a href="tools/tally-keeper">Tally Keeper</a></li>
-                    <li><a href="tools/tip-calculator">Tip Calculator</a></li>
                 </ul>
             </li>
             <li>
@@ -131,7 +118,6 @@
             })
         }
     });
-
     </script>
 </article>
 <?php include('php/footer.php');?>

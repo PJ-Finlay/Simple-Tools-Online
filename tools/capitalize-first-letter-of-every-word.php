@@ -33,5 +33,13 @@ include($_SERVER['DOCUMENT_ROOT'].'/php/header.php');
         });
     </script>
 </article>
+<aside class="similarTools">
+    <h3>Similar Tools</h3>
+    <ul>
+        <li><a href="tools/convert-to-lower-case">Convert to Lower Case</a></li>
+        <li><a href="tools/convert-to-sentence-case">Convert to Sentence Case</a></li>
+        <li><a href="tools/convert-to-upper-case">Convert to Upper Case</a></li>
+    </ul>
+</aside>
 
 <?php include($_SERVER['DOCUMENT_ROOT'].'/php/footer.php');?>

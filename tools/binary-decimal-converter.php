@@ -15,7 +15,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/php/header.php');
 
     <fieldset>
         <legend>Binary</legend>
-        <input type="text" id="binary">
+        <input type="text" id="binary" value="0">
     </fieldset>
 
     <script>

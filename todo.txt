@@ -21,6 +21,7 @@
 -Add all functions to descriptive statistics keywords
 -Better searching (using keywords and fuzzy)
 -Resistor Color Code
+-Find javascript searching library for homepage search
 
 
 Tools:
@@ -77,3 +78,13 @@ http://mathfest.wikispaces.com/Online+Calculators
 Monetization:
 I could consider a monitization model like this selling the tools for people to put on their website:
  http://tcalc.timevalue.com/all-financial-calculators.aspxhttp://tcalc.timevalue.com/all-financial-calculators.aspx
+
+
+
+
+
+ UNFINISHED:
+ <!--<li><a href="tools/greatest-common-factor-calculator">Greatest Common Factor Calculator</a></li>-->
+ <!--<li><a href="tools/least-common-multiple-calculator">Least Common Multiple Calculator</a></li>-->
+ <!--<li><a href="tools/morse-code-converter">Morse Code Converter</a></li>-->
+     <!--<li><a href="tools/age-calculator">Age Calculator</a></li>-->

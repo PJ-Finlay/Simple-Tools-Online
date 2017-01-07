@@ -59,6 +59,7 @@ $(document).ready(function(){
                 $icon.text("fullscreen");
                 $("main").removeClass("fullscreen");
                 $icon.finish();
+                $icon.show();
             }
         });
         $fullscreenDiv.append($fullscreenToggle);
