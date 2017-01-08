@@ -106,10 +106,16 @@ function output(outputFunction,autoWrapOutput=true){
     var $output = $("#output");
     try{
         var outputValue = outputFunction();
+        var $outputDiv = $('<div class="outputContainer"></div>');
+        var $outputContainer = $outputDiv;
+
         if(autoWrapOutput){
-            outputValue = '<output>' + outputValue + '</output>';
+            $outputContainer = $('<output>');
+            $outputDiv.append($outputContainer);
         }
-        $output.html('<div class="outputContainer">' + outputValue + '</div>');
+
+        $outputContainer.text(outputValue);
+        $output.html($outputDiv);
     }catch(error){
         $output.html('<div class="errorOutput">' + error + '</div>');
     }
