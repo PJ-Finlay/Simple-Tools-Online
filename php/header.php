@@ -6,9 +6,8 @@ if(!isset($toolName)){
     $toolName = $siteName;
 }
 
-$defaultDescription = "Online ".$toolName;
 if(!isset($description)){
-    $description = $defaultDescription;
+    $description = $toolName;
 }
 
 if(isset($keywords)){

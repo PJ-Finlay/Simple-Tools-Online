@@ -34,6 +34,7 @@
                 <span>Other</span>
                 <ul>
                     <li><a href="tools/caesar-cipher-generator">Caesar Cipher Generator</a></li>
+                    <li><a href="tools/notepad">Notepad</a></li>
                     <li><a href="tools/password-generator">Password Generator</a></li>
                     <li><a href="tools/random-number-generator">Random Number Generator</a></li>
                     <li><a href="tools/roman-numeral-converter">Roman Numeral Converter</a></li>

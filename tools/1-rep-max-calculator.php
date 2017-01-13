@@ -9,7 +9,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/php/header.php');
 
     <fieldset id="weight-fieldset">
         <legend>Weight</legend>
-        <label for="weight">Lbs or Kgs</label><br>
+        <label for="weight">Weight</label><br>
         <input type="number"  id="weight" min='0'>
     </fieldset>
 

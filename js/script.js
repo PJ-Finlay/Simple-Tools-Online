@@ -114,7 +114,7 @@ function output(outputFunction,autoWrapOutput=true){
             $outputDiv.append($outputContainer);
         }
 
-        $outputContainer.text(outputValue);
+        $outputContainer.html(outputValue);
         $output.html($outputDiv);
     }catch(error){
         $output.html('<div class="errorOutput">' + error + '</div>');
@@ -142,6 +142,13 @@ function moneyString(value){
 //Escapes regex from a string
 function escapeRegExp(string){
   return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+//Turns html characters into their codes
+function escapeHTML(string){
+    var temp = document.createElement('div');
+    temp.innerHTML = string;
+    return temp.textContent;
 }
 
 //returns a string with the given number of decimal places and padding length

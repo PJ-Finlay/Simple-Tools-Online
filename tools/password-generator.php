@@ -67,6 +67,8 @@ include($_SERVER['DOCUMENT_ROOT'].'/php/header.php');
                         result += validCharacters[randomChoice];
                     }
 
+                    result = escapeHTML(result);
+
                     return result;
                 });
             }
