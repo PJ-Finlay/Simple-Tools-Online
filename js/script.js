@@ -86,7 +86,7 @@ $(document).ready(function(){
 //Also calls it once when the listener is set
 function setOnChangeListener(listener){
     listener();
-    $(".tool input,.tool  select,.tool  textarea").on('keydown change input', listener);
+    $(".tool input,.tool  select,.tool  textarea").on('change input', listener);
 }
 
 //Checks to make sure that value is a valid number then outputs to the given selector

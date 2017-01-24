@@ -22,6 +22,7 @@
 -Better searching (using keywords and fuzzy)
 -Resistor Color Code
 -Find javascript searching library for homepage search
+-Clock displays wrong AM/PM for noon/midnight
 
 
 Tools:

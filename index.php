@@ -82,6 +82,7 @@
                 <span>Technology</span>
                 <ul>
                     <li><a href="reference/ansii-table">ANSII Table</a></li>
+                    <li><a href="reference/resistor-color-code">Resistor Color Code</a></li>
                 </ul>
             </li>
         </ul>

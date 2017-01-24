@@ -1,12 +1,9 @@
 <?php
 $toolName = "Notepad";
-$keywords = "no login, no log in";
+$keywords = "no login, no log in, save text file, open text file";
 include($_SERVER['DOCUMENT_ROOT'].'/php/header.php');
 ?>
 <article class="tool">
-    <div class="toolDescription">
-        Notepad text is saved in a <a href="https://en.wikipedia.org/wiki/HTTP_cookie" target="_blank">browser cookie</a> and can be accessed after the tab has been closed as long as cookies are not cleared.
-    </div>
     <button id="save">Download</button>
     <button id="copy" data-clipboard-target="#text">Copy</button>
     |
@@ -40,7 +37,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/php/header.php');
             }
         }
         loadFromCookie();
-        $text.change(saveToCookie);
+        $text.on('keydown', saveToCookie);
 
         //Manage Copy
         new Clipboard('#copy');
@@ -53,7 +50,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/php/header.php');
                 reader.onload = function() {
                     var $text = $("#text");
                     $text.val(reader.result);
-                    $text.change();
+                    saveToCookie();
                 }
                 reader.readAsText(selectedFile); //Assumes UTF-8 encoding
             }else{
