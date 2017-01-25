@@ -76,6 +76,7 @@
                 <span>Other</span>
                 <ul>
                     <li><a href="reference/morse-code">Morse Code</a></li>
+                    <li><a href="reference/poker-hands">Poker Hands</a></li>
                 </ul>
             </li>
             <li>

@@ -3,6 +3,7 @@
 -Rounding on percent change
 -Prevent sass cache files from being tracked by git and uploaded to server
 -Test for bugs
+-Mobile styling for clock/stopwatch
 
 
 Tools:
@@ -42,7 +43,10 @@ More stats calculators
     -Bayes Calculator
 Morse code converter
 Switch Descriptive statistics to csv parsing library
-Mobile styling for clock/stopwatch
+Grade Calculation Tools:
+-http://www.rapidtables.com/calc/grade/grade-calculator.htm
+-http://www.rapidtables.com/calc/grade/final-grade-calculator.htm
+-http://www.rapidtables.com/calc/grade/gpa-calculator.htm
 
 
 SEO
