@@ -5,6 +5,9 @@ include($_SERVER['DOCUMENT_ROOT'].'/php/header.php');
 
 <article class="tool">
     <h1>Quadratic Equation Solver</h1>
+    <div class="toolDescription">
+        Solves quadratic equations in the form: ax<sup>2</sup>+bx+c
+    </div>
     <fieldset>
         <label for="a">a</label><br>
         <input id="a" type="number"><br>

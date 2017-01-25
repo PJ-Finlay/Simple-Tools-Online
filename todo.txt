@@ -1,28 +1,8 @@
--Favicon needs a redo
--Add meta description for seo (also make a default that uses the name to write a short sentence)
--Try various site checkers
--Go through list of web best practices
--Write Meta descriptions
 -Rename $toolName variable on all pages to $pageTitle
--Look into https://developer.mozilla.org/en-US/docs/Web/Security/HTTP_strict_transport_security
--Figure out RegExp for capitalization tools
 -Make .git and todo.txt return standard 404 instead of redirecting
--Add similar tools dialog to case tools (should be a sidebar)
 -Rounding on percent change
--Switch all tools over to new time-calculator format of outputting
-    -This includes switching over to not using labels except for in tables
 -Prevent sass cache files from being tracked by git and uploaded to server
 -Test for bugs
--Fix footer links from dropping down on mobile
--Make sidebar that has extra information about the tool that drops down on mobile
-	-Add short explanation to quadratic solver
--Add to privacy policy (Like this http://www.thecollegefix.com/privacy-policy/)
--Also style inputs that default to text
--Add all functions to descriptive statistics keywords
--Better searching (using keywords and fuzzy)
--Resistor Color Code
--Find javascript searching library for homepage search
--Clock displays wrong AM/PM for noon/midnight
 
 
 Tools:
@@ -41,7 +21,6 @@ Find JS LIbrary
 Figure out the charts api and make some chart based tools
 BMR
 Binary Calculator
-Straight Calculator
 Poker hands calculator
 Bayes Rule Calculator
 Ideal weight calculator

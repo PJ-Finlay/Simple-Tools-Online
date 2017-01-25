@@ -50,9 +50,11 @@ include($_SERVER['DOCUMENT_ROOT'].'/php/header.php');
             var hours = date.getHours();
             var minutes = date.getMinutes();
             var amPm = "AM";
+            if(hours >= 12 && hours <= 23){
+                amPm = "PM";
+            }
             if(hours > 12){
                 hours -= 12;
-                amPm = "PM";
             }
             var seconds = date.getSeconds();
             var dayOfWeek = date.getUTCDay();
