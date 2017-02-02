@@ -146,9 +146,12 @@ function escapeRegExp(string){
 
 //Turns html characters into their codes
 function escapeHTML(string){
-    var temp = document.createElement('div');
-    temp.innerHTML = string;
-    return temp.textContent;
+    return string
+         .replace(/&/g, "&amp;")
+         .replace(/</g, "&lt;")
+         .replace(/>/g, "&gt;")
+         .replace(/"/g, "&quot;")
+         .replace(/'/g, "&#039;");
 }
 
 //returns a string with the given number of decimal places and padding length

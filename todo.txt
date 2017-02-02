@@ -1,3 +1,7 @@
+Top:
+
+
+
 -Rename $toolName variable on all pages to $pageTitle
 -Make .git and todo.txt return standard 404 instead of redirecting
 -Rounding on percent change
@@ -16,6 +20,7 @@ http://www.free-online-calculator-use.com/
 http://www.quickpicturetools.com/en/
 http://textmechanic.com/
 https://www.tools4noobs.com/online_tools/
+http://www.martindalecenter.com/Calculators.html
 
 TDE
 Find JS LIbrary
@@ -51,8 +56,6 @@ Grade Calculation Tools:
 
 SEO
 Places to try to get a link:
-http://toolstohelpyou.com/
-http://www.martindalecenter.com/Calculators.html
 http://mathfest.wikispaces.com/Online+Calculators
 -Do something like this: http://www.calculator.net/calculators-for-your-site.html and get links by having people include calculator on their site
 -Look up links of competing sites and say that your site could "provide more value to their users"
@@ -61,7 +64,8 @@ http://mathfest.wikispaces.com/Online+Calculators
 
 Monetization:
 I could consider a monitization model like this selling the tools for people to put on their website:
- http://tcalc.timevalue.com/all-financial-calculators.aspxhttp://tcalc.timevalue.com/all-financial-calculators.aspx
+ http://tcalc.timevalue.com/all-financial-calculators.aspx
+
 
 
 

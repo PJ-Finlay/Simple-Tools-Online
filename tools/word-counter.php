@@ -21,7 +21,7 @@ include($_SERVER['DOCUMENT_ROOT'].'/php/header.php');
                 <td><label for="wordsOutput">Words</label></td>
                 <td><output id="wordsOutput"></output></td>
             </tr>
-                <td><label for="sentancesOutput">Sentances</label></td>
+                <td><label for="sentancesOutput">Sentences</label></td>
                 <td><output id="sentancesOutput"></output></td>
             <tr>
                 <td><label for="paragraphsOutput">Paragraphs</label></td>
